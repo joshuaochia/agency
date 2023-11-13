@@ -1,24 +1,23 @@
-import Footer from '@layout/footer/footer';
-import Header from '@layout/header/header';
-import React from 'react';
-import ServicesSection from './services-section';
-import PortfolioSection from './portfolio-section';
-import CollectionSection from '@components/home/collection-section';
-import PolicySection from './policy-section';
-import Breadcrumb from '@components/common/breadcrumb/breadcrumb';
+import React from "react";
+import PortfolioSection from "./portfolio-section";
+import PolicySection from "./policy-section";
+import Breadcrumb from "@components/common/breadcrumb/breadcrumb";
+import ServiceSectionFive from "@components/home/service-section-5";
+import HeaderFour from "@layout/header/header-4";
+import FooterFive from "@layout/footer/footer-5";
 
 const Index = () => {
-    return (
-        <main>
-            <Header />
-            <Breadcrumb title='Service V1' subTitle='Service V1' />
-            <ServicesSection />
-            <PortfolioSection />
-            <PolicySection />
-            <CollectionSection />
-            <Footer />
-        </main>
-    );
+  return (
+    <main>
+      <HeaderFour />
+      <Breadcrumb title="Service V1" subTitle="Service V1" />
+      <ServiceSectionFive />
+      <PortfolioSection />
+      <PolicySection />
+
+      <FooterFive />
+    </main>
+  );
 };
 
 export default Index;

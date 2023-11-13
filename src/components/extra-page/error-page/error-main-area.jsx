@@ -1,18 +1,18 @@
-import CollectionSection from '@components/home/collection-section';
-import Footer from '@layout/footer/footer';
-import Header from '@layout/header/header';
-import React from 'react';
-import ErrorSection from './error-section';
+import React from "react";
+import ErrorSection from "./error-section";
+
+import HeaderFour from "@layout/header/header-4";
+import FooterFive from "@layout/footer/footer-5";
 
 const ErrorMainArea = () => {
-    return (
-        <main>
-            <Header />
-            <ErrorSection />
-            <CollectionSection />
-            <Footer />
-        </main>
-    );
+  return (
+    <main>
+      <HeaderFour />
+      <ErrorSection />
+
+      <FooterFive />
+    </main>
+  );
 };
 
 export default ErrorMainArea;

@@ -4,18 +4,29 @@ import React from "react";
 
 const Menus = () => {
   return (
-    <ul>
+    <ul style={{ color: "white" }}>
       {menu_data.map((menu, i) => (
         <li
+          style={{ color: "black" }}
           key={i}
-          className={` ${menu.megaMenu ? "has-dropdown has-mega-menu" : ""} ${menu.hasDropdown ? "has-dropdown" : ""}`}
+          className={` ${menu.megaMenu ? "has-dropdown has-mega-menu" : ""} ${
+            menu.hasDropdown ? "has-dropdown" : ""
+          }`}
         >
-          <Link href={menu.link}>{menu.title}</Link>
+          <Link style={{ color: "black" }} href={menu.link}>
+            {menu.title}
+          </Link>
           {menu.hasDropdown && (
             <ul className="submenu">
               {menu.submenus.map((sub, i) => (
                 <li key={i}>
-                  <Link href={sub.link}>{sub.title}</Link>
+                  <Link
+                    color="black"
+                    style={{ color: "black" }}
+                    href={sub.link}
+                  >
+                    {sub.title}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -23,14 +34,21 @@ const Menus = () => {
           {menu.mega_menus && (
             <ul className="mega-menu">
               {menu.mega_menus.map((mega, i) => (
-                <li key={i}>
-                  <Link href={mega.link} className="mega-menu-title">
+                <li style={{ color: "black" }} key={i}>
+                  <Link
+                    color="black"
+                    style={{ color: "black" }}
+                    href={mega.link}
+                    className="mega-menu-title"
+                  >
                     {mega.title}
                   </Link>
                   <ul>
                     {mega.submenus.map((sub_mega, i) => (
                       <li key={i}>
-                        <Link href={sub_mega.link}>{sub_mega.title}</Link>
+                        <Link style={{ color: "black" }} href={sub_mega.link}>
+                          {sub_mega.title}
+                        </Link>
                       </li>
                     ))}
                   </ul>

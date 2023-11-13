@@ -1,13 +1,12 @@
-import Wrapper from '../layout/wrapper'
+import Wrapper from "../layout/wrapper";
 import SEO from "@components/seo";
-import HomeFiveMain from "@components/home-5"
-
+import HomeFiveMain from "@components/home";
 
 export default function HomeFive() {
   return (
     <Wrapper>
-      <SEO pageTitle={'Home Five'} />
+      <SEO pageTitle={"Home Five"} />
       <HomeFiveMain />
     </Wrapper>
-  )
+  );
 }

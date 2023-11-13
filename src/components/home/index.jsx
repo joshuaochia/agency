@@ -1,31 +1,33 @@
-import React from 'react';
-import HeroSection from './heroSection';
-import Brand_section from './brand-section';
-import About from './about'
-import CollectionSection from './collection-section';
-import BlogSection from './blog-section';
-import PortfolioSection from './portfolio-section';
-import ReviewSection from './review-section';
-import ServiceSection from './service-section';
-import Header from '@layout/header/header';
-import Footer from '@layout/footer/footer';
+import AboutSectionFive from "./about-section-5";
+import BlogSectionFive from "./blog-section-5";
+import BrandSectionFive from "./brand-section-5";
+import PolicySection from "./policy-section";
+import ReviewSectionFive from "./review-section-5";
+import ServiceSectionFive from "./service-section-5";
 
+import ValueSection from "./value-section";
+import FooterFive from "@layout/footer/footer-5";
+import HeaderFour from "@layout/header/header-4";
+import HeroSectionFour from "@components/home/hero-section-4";
+import PortfolioSectionTwo from "@components/home/portfolio-section-2";
 
 const Index = () => {
-    return (
-        <main>
-            <Header />
-            <HeroSection />
-            <Brand_section />
-            <About />
-            <ServiceSection />
-            <PortfolioSection />
-            <ReviewSection />
-            <BlogSection />
-            <CollectionSection />
-            <Footer />
-        </main>
-    );
+  return (
+    <main className="overflow-hidden">
+      <HeaderFour />
+      <HeroSectionFour />
+      <PolicySection />
+      <AboutSectionFive />
+      <ServiceSectionFive />
+      <ValueSection />
+      <BrandSectionFive />
+      <PortfolioSectionTwo />
+      {/* <TeamSection /> */}
+      <ReviewSectionFive />
+      <BlogSectionFive />
+      <FooterFive />
+    </main>
+  );
 };
 
 export default Index;
