@@ -31,11 +31,18 @@ const HeaderFour = () => {
     <>
       <header className="site_header site_header_4 p-0 bg-transparent shadow-none header-main">
         <div className="container">
-          <div className="content_box">
+          <div
+            style={{
+              backgroundColor: "rgba(255,255,255,1)",
+              backdropFilter: "blur(20px)",
+            }}
+            className="content_box"
+          >
             <div className="header_wrapper">
               <div className="site_logo">
                 <Link className="site_link" href="/">
                   <Image
+                    width={200}
                     src={site_logo}
                     alt="Site Logo - Paradox - Agency Template"
                   />
@@ -62,7 +69,7 @@ const HeaderFour = () => {
               </div>
               <div className="header_right">
                 <ul className="header_btns_group unordered_list_end d-none d-md-flex">
-                  <li>
+                  {/* <li>
                     <div className="select_option m-0">
                       <div className="icon_wrap">
                         <Image
@@ -83,14 +90,18 @@ const HeaderFour = () => {
                         name="English"
                       />
                     </div>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link href="/contact" className="bd-btn-link btn_dark">
+                    <Link
+                      style={{ background: "#ffc961", color: "black" }}
+                      href="/contact"
+                      className="bd-btn-link btn_dark"
+                    >
                       <span className="bd-button-content-wrapper">
                         <span className="pd-animation-flip">
                           <span className="bd-btn-anim-wrapp">
-                            <span className="bd-button-text">Get a Quotes</span>
-                            <span className="bd-button-text">Get a Quotes</span>
+                            <span className="bd-button-text">Contact Us</span>
+                            <span className="bd-button-text">Contact Us</span>
                           </span>
                         </span>
                       </span>

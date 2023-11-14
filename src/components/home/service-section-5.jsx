@@ -3,11 +3,10 @@ import Link from "next/link";
 import React from "react";
 import shape_line_1 from "@assets/images/shapes/shape_line_3.svg";
 import shape_line_2 from "@assets/images/shapes/shape_4.svg";
-import about_overlay from "@assets/images/about/about_image_8.jpg";
+import about_overlay from "@assets/images/about/about_image-12.png";
 import service_data from "@data/common_data/service-data";
 
 const ServiceSectionFive = () => {
-  console.log(service_data, "service_data");
   return (
     <section className="service_section section_space_lg bg_primary">
       <div className="container decoration_wrap">

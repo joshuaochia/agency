@@ -13,7 +13,7 @@ const Menus = () => {
             menu.hasDropdown ? "has-dropdown" : ""
           }`}
         >
-          <Link style={{ color: "black" }} href={menu.link}>
+          <Link style={{ color: "black", fontWeight: 900 }} href={menu.link}>
             {menu.title}
           </Link>
           {menu.hasDropdown && (
