@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import site_logo from "@assets/images/logo/site_logo_dark.svg";
+import site_logo from "@assets/images/logo/site_logo_yellow.svg";
 import icon_globe from "@assets/images/icons/icon_globe.svg";
 import Image from "next/image";
 import Menus from "./menus";
@@ -33,7 +33,7 @@ const HeaderFour = () => {
         <div className="container">
           <div
             style={{
-              backgroundColor: "rgba(255,255,255,1)",
+              backgroundColor: "rgba(255,255,255,0.9)",
               backdropFilter: "blur(20px)",
             }}
             className="content_box"
@@ -93,7 +93,12 @@ const HeaderFour = () => {
                   </li> */}
                   <li>
                     <Link
-                      style={{ background: "#ffc961", color: "black" }}
+                      style={{
+                        backgroundColor: "#fff293",
+                        backgroundImage:
+                          "linear-gradient(315deg, #fff293 0%, #ffe884 74%)",
+                        color: "black",
+                      }}
                       href="/contact"
                       className="bd-btn-link btn_dark"
                     >

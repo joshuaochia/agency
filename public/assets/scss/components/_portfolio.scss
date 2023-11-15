@@ -269,13 +269,13 @@
 .layout_boxed {
   padding: 30px;
   transition: $transition_fast;
-  background-color: transparent;
+  background-color: white;
   border-radius: $radius_primary;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(15, 14, 14, 0.1);
   .item_image {
     padding: 20px;
     transition: $transition_fast;
-    background-color: $color_light_2;
+    background-color: transparent;
   }
   .item_content {
     max-width: 315px;
@@ -283,7 +283,8 @@
   .category_list {
     a {
       color: black !important;
-      background-color: #ffc961 !important;
+      background-color: #fff293 !important;
+      background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%);
     }
   }
   .item_title {
@@ -291,7 +292,7 @@
     line-height: 33px;
     margin-bottom: 25px;
     a {
-      color: white;
+      color: black;
       &:hover {
         color: #ffc961;
       }
@@ -301,23 +302,24 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 20px;
+    color: black;
   }
   .btn-link {
-    color: white;
+    color: black;
     .btn_text {
       &:before {
-        background-color: rgb(255, 201, 97);
+        background-color: #fff293;
       }
     }
     &:hover {
-      color: rgb(255, 201, 97);
+      color: #fff293;
     }
   }
   &:hover {
-    border-color: $color_light_2;
-    background-color: $color_light_2;
+    border-color: #fff293;
+    background-color: #fff293;
     .item_image {
-      background-color: rgb(255, 201, 97);
+      background-color: #fff293;
     }
   }
 }

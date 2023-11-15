@@ -4,16 +4,18 @@ import React from "react";
 const PortfolioSectionTwo = () => {
   return (
     <section
-      style={{ backgroundColor: "black" }}
+      style={{ backgroundColor: "#fafafa" }}
       className="portfolio_section section_space_lg"
     >
       <div className="decoration_wrap">
         <div className="container">
           <div className="section_heading style_2 text-center">
             <h2 className="heading_subtitle">
-              <span style={{ color: "white" }}>My Portfolio</span>
+              <span style={{ color: "black" }}>My Portfolio</span>
             </h2>
-            <h3 className="heading_title mb-0">My Best Works</h3>
+            <h3 style={{ color: "black" }} className="heading_title mb-0">
+              My Best Works
+            </h3>
           </div>
           <div className="button-group filters-button-group style_2">
             <div className="portfolio_button">

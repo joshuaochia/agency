@@ -204,7 +204,7 @@ textarea.form-control {
     inset-inline-start: 0;
     top: 13px;
     font-size: 20px;
-    color: $color_dark;
+    color: black;
     position: absolute;
   }
   input {
@@ -239,14 +239,15 @@ textarea.form-control {
     border-radius: 100%;
     align-items: center;
     justify-content: center;
-    background-color: $color_warning;
+    background-color: #fff293;
+    background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%);
     @include rtl {
       left: 7px;
       right: auto;
     }
     &:hover {
-      color: $color_white;
-      background-color: $color_primary;
+      color: black;
+      background-color: black;
       i {
         animation: iconltr 0.5s forwards;
       }

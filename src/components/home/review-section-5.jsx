@@ -47,7 +47,7 @@ const ReviewSectionFive = () => {
         onClose={() => setIsOpen(false)}
       />
       <section
-        style={{ backgroundColor: "#ffc961" }}
+        style={{ backgroundColor: "#090910" }}
         className="review_section bg_light position-relative"
       >
         <div className="container">
@@ -99,7 +99,12 @@ const ReviewSectionFive = () => {
                               <i className="fas fa-star"></i>
                             </li>
                           </ul>
-                          <p className="review_content">{item.description}</p>
+                          <p
+                            style={{ color: "white" }}
+                            className="review_content"
+                          >
+                            {item.description}
+                          </p>
                           <span className="quote_icon">
                             <Image
                               src={item.quote_icon}
@@ -116,7 +121,12 @@ const ReviewSectionFive = () => {
                               />
                             </div>
                             <div className="admin_info">
-                              <h3 className="admin_name">{item.admin_name}</h3>
+                              <h3
+                                style={{ color: "white" }}
+                                className="admin_name"
+                              >
+                                {item.admin_name}
+                              </h3>
                               <span className="admin_designation">
                                 {item.designation}
                               </span>
@@ -132,6 +142,7 @@ const ReviewSectionFive = () => {
                   <ul className="carousel_arrow unordered_list_center pt-md-0">
                     <li>
                       <button
+                        style={{ color: "white" }}
                         type="button"
                         className="cc1c_left_arrow"
                         onClick={handlePrevClick}
@@ -141,6 +152,7 @@ const ReviewSectionFive = () => {
                     </li>
                     <li>
                       <button
+                        style={{ color: "white" }}
                         type="button"
                         className="cc1c_right_arrow"
                         onClick={handleNextClick}

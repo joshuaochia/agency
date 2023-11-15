@@ -14,7 +14,7 @@ import Link from "next/link";
 const ValueSection = () => {
   return (
     <section
-      style={{ backgroundColor: "black" }}
+      style={{ background: "white" }}
       className="our_value_section section_space_lg pb-0"
     >
       <div className="container">
@@ -71,12 +71,16 @@ const ValueSection = () => {
             <div className="content_wrap">
               <div className="section_heading style_3">
                 <h2
-                  style={{ backgroundColor: "#ffc961" }}
+                  style={{
+                    backgroundColor: "#fff293",
+                    backgroundImage:
+                      "linear-gradient(315deg, #fff293 0%, #ffe884 74%)",
+                  }}
                   className="heading_subtitle"
                 >
                   <span>Our Values</span>
                 </h2>
-                <h3 className="heading_title mb-0">
+                <h3 style={{ color: "black" }} className="heading_title mb-0">
                   Clear Thinking Makes a Bright Future
                 </h3>
               </div>
@@ -91,8 +95,10 @@ const ValueSection = () => {
                       />
                     </div>
                     <div className="item_content">
-                      <h3 className="item_title">User Friendly</h3>
-                      <p className="mb-0">
+                      <h3 style={{ color: "black" }} className="item_title">
+                        User Friendly
+                      </h3>
+                      <p style={{ color: "black" }} className="mb-0">
                         Focused and planned. We are result oriented organize and
                         are committee to invest
                       </p>
@@ -109,8 +115,10 @@ const ValueSection = () => {
                       />
                     </div>
                     <div className="item_content">
-                      <h3 className="item_title">Best Support</h3>
-                      <p className="mb-0">
+                      <h3 style={{ color: "black" }} className="item_title">
+                        Best Support
+                      </h3>
+                      <p style={{ color: "black" }} className="mb-0">
                         Focused and planned. We are result oriented organize and
                         are committee to invest
                       </p>
@@ -120,27 +128,27 @@ const ValueSection = () => {
               </div>
               <div className="btn_wrap pb-0">
                 <Link
-                  style={{ backgroundColor: "white" }}
+                  style={{ backgroundColor: "black" }}
                   href="/about"
                   className="bd-btn-link btn_primary"
                 >
                   <span className="bd-button-content-wrapper">
                     <span className="bd-button-icon">
                       <i
-                        style={{ color: "black" }}
+                        style={{ color: "white" }}
                         className="fa-light fa-arrow-right-long"
                       ></i>
                     </span>
                     <span className="pd-animation-flip">
                       <span className="bd-btn-anim-wrapp">
                         <span
-                          style={{ color: "black" }}
+                          style={{ color: "white" }}
                           className="bd-button-text"
                         >
                           Know More
                         </span>
                         <span
-                          style={{ color: "black" }}
+                          style={{ color: "white" }}
                           className="bd-button-text"
                         >
                           Know More

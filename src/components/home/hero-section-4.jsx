@@ -14,7 +14,10 @@ import Image from "next/image";
 
 const HeroSectionFour = () => {
   return (
-    <section className="hero_banner_section style_4 bg_light_3 decoration_wrap">
+    <section
+      style={{ background: "#090910" }}
+      className="hero_banner_section style_4 bg_light_3 decoration_wrap"
+    >
       <div
         className="banner_bg_4"
         // style={{ backgroundImage: `url(${shape_banner_1.src})` }}
@@ -129,7 +132,11 @@ const HeroSectionFour = () => {
                   placeholder="Enter your Email Address"
                 />
                 <button
-                  style={{ background: "#ffc961" }}
+                  style={{
+                    backgroundColor: "#fff293",
+                    backgroundImage:
+                      "linear-gradient(315deg, #fff293 0%, #ffe884 74%)",
+                  }}
                   type="submit"
                   className="bd-btn-link btn_primary"
                 >

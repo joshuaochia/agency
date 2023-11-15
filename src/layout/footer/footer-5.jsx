@@ -2,7 +2,7 @@ import React from "react";
 
 import cta_image_5 from "@assets/images/calltoaction/cta_image_5.png";
 import shape_4 from "@assets/images/shapes/shape_4.svg";
-import site_logo_dark from "@assets/images/logo/site_logo_dark.svg";
+import site_logo_dark from "@assets/images/logo/site_logo_yellow_white.svg";
 import icon_mapmark from "@assets/images/icons/icon_mapmark.svg";
 
 import Image from "next/image";
@@ -10,14 +10,15 @@ import Link from "next/link";
 
 const FooterFive = () => {
   return (
-    <footer style={{ background: "black" }} className="site_footer style_4">
-      <div
-        style={{ background: "black" }}
-        className="calltoaction_section style_5"
-      >
+    <footer style={{ background: "#FAFAFA " }} className="site_footer style_4">
+      <div className="calltoaction_section style_5">
         <div className="container">
           <div
-            style={{ background: "rgba(255, 201, 97,0.9)" }}
+            style={{
+              backgroundColor: "#fff293",
+              backgroundImage:
+                "linear-gradient(315deg, #fff293 0%, #ffe884 74%)",
+            }}
             className="content_box bg_primary decoration_wrap"
           >
             <div className="row align-items-center">
@@ -80,7 +81,7 @@ const FooterFive = () => {
           </div>
         </div>
       </div>
-      <div style={{ background: "black" }} className="footer_widget_area">
+      <div style={{ background: "#090910" }} className="footer_widget_area">
         <div className="container">
           <div className="row">
             <div className="col col-lg-3 col-md-6">
@@ -165,7 +166,7 @@ const FooterFive = () => {
         </div>
       </div>
       <div
-        style={{ background: "black", color: "white" }}
+        style={{ background: "#090910", color: "white" }}
         className="footer_bottom"
       >
         <div className="container">

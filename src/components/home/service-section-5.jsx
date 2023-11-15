@@ -8,10 +8,21 @@ import service_data from "@data/common_data/service-data";
 
 const ServiceSectionFive = () => {
   return (
-    <section className="service_section section_space_lg bg_primary">
+    <section
+      style={{ background: "#090910" }}
+      className="service_section section_space_lg bg_primary"
+    >
       <div className="container decoration_wrap">
         <div className="section_heading style_3 text-center text-white">
-          <h2 className="heading_subtitle">
+          <h2
+            style={{
+              backgroundColor: "#fff293",
+              backgroundImage:
+                "linear-gradient(315deg, #fff293 0%, #ffe884 74%)",
+              color: "black",
+            }}
+            className="heading_subtitle"
+          >
             <span>Our Service</span>
           </h2>
           <h3 className="heading_title mb-0">Providing Solutions</h3>
