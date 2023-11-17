@@ -6,14 +6,21 @@ import Link from "next/link";
 
 const Breadcrumb = ({ title, subTitle }) => {
   return (
-    <section className="page_banner text-center">
+    <section
+      style={{ background: "rgb(9, 9, 16)" }}
+      className="page_banner text-center"
+    >
       <div className="container decoration_wrap">
-        <h1 className="page_title">{title}</h1>
+        <h1 style={{ color: "white" }} className="page_title">
+          {title}
+        </h1>
         <ul className="breadcrumb_nav unordered_list_center">
           <li>
-            <Link href="/">Home</Link>
+            <Link style={{ color: "white" }} href="/">
+              Home
+            </Link>
           </li>
-          <li>{subTitle}</li>
+          <li style={{ color: "white" }}>{subTitle}</li>
         </ul>
         <div className="deco_item shape_1 wow fadeInUp" data-wow-delay=".1s">
           <Image
@@ -27,7 +34,11 @@ const Breadcrumb = ({ title, subTitle }) => {
           className="deco_item shape_2 wow rotateInDownRight"
           data-wow-delay=".1s"
         >
-        <img src="/assets/images/shapes/shape_circle_half_1.svg" data-parallax='{"y" : 200, "smoothness": 10}' alt="Paradox - Shape Image"/>
+          <img
+            src="/assets/images/shapes/shape_circle_half_1.svg"
+            data-parallax='{"y" : 200, "smoothness": 10}'
+            alt="Paradox - Shape Image"
+          />
         </div>
         <div className="deco_item shape_3 wow fadeInDown">
           <Image

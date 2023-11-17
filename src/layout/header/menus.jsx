@@ -13,9 +13,16 @@ const Menus = () => {
             menu.hasDropdown ? "has-dropdown" : ""
           }`}
         >
-          <Link style={{ color: "black", fontWeight: 900 }} href={menu.link}>
-            {menu.title}
-          </Link>
+          {menu.link === "/service" ? (
+            <Link style={{ color: "black", fontWeight: 900 }} href={"#"}>
+              {" "}
+              {menu.title}
+            </Link>
+          ) : (
+            <Link style={{ color: "black", fontWeight: 900 }} href={menu.link}>
+              {menu.title}
+            </Link>
+          )}
           {menu.hasDropdown && (
             <ul className="submenu">
               {menu.submenus.map((sub, i) => (

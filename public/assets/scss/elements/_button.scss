@@ -141,7 +141,8 @@
     border-radius: 50px;
     display: inline-flex;
     flex-wrap: wrap;
-    background-color: $color_light;
+    background-color: transparent;
+    border: 1px solid $color_border;
     @media #{$xs,$sm,$md} {
       padding: 10px 25px;
     }
@@ -155,7 +156,7 @@
       color: $color_dark;
       padding: 10px 15px 9px;
       &.active {
-        color: $color_primary;
+        color: #ffc961;
       }
     }
   }

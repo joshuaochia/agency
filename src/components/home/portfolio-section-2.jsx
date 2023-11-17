@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const PortfolioSectionTwo = () => {
+const PortfolioSectionTwo = ({ item }) => {
   return (
     <section
       style={{ backgroundColor: "#fafafa" }}
@@ -11,10 +11,10 @@ const PortfolioSectionTwo = () => {
         <div className="container">
           <div className="section_heading style_2 text-center">
             <h2 className="heading_subtitle">
-              <span style={{ color: "black" }}>My Portfolio</span>
+              <span style={{ color: "black" }}> Portfolio</span>
             </h2>
             <h3 style={{ color: "black" }} className="heading_title mb-0">
-              My Best Works
+              {item?.title ? `${item.title} Works ` : "My Best Works"}
             </h3>
           </div>
           <div className="button-group filters-button-group style_2">

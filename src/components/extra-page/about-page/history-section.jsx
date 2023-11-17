@@ -7,7 +7,10 @@ import { SwiperSlide, Swiper } from "swiper/react";
 
 const HistorySection = () => {
   return (
-    <section className="history_section section_space_lg">
+    <section
+      style={{ background: "#FAFAFA" }}
+      className="history_section section_space_lg"
+    >
       <div className="container">
         <div className="section_heading text-center">
           <h2 className="heading_subtitle text-uppercase">
@@ -15,9 +18,11 @@ const HistorySection = () => {
               <i className="fas fa-sharp fa-square-full"></i>
               <i className="fas fa-sharp fa-square-full"></i>
             </span>
-            <span>Our History</span>
+            <span style={{ color: "#373745" }}>Our History</span>
           </h2>
-          <h3 className="heading_title mb-0">Journey of Paradox</h3>
+          <h3 style={{ color: "#373745" }} className="heading_title mb-0">
+            Journey of Paradox
+          </h3>
         </div>
       </div>
       <div className="history_carousel_wrap">
@@ -56,8 +61,14 @@ const HistorySection = () => {
             <SwiperSlide>
               <br></br>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox
@@ -77,8 +88,14 @@ const HistorySection = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox
@@ -90,7 +107,10 @@ const HistorySection = () => {
                   </div>
                 </div>
                 <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
                     <span>2004</span>
                   </h4>
                 </div>
@@ -99,8 +119,14 @@ const HistorySection = () => {
             <SwiperSlide>
               <br></br>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox
@@ -112,7 +138,10 @@ const HistorySection = () => {
                   </div>
                 </div>
                 <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
                     <span>2010</span>
                   </h4>
                 </div>
@@ -121,8 +150,14 @@ const HistorySection = () => {
 
             <SwiperSlide>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox
@@ -134,7 +169,10 @@ const HistorySection = () => {
                   </div>
                 </div>
                 <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
                     <span>2014</span>
                   </h4>
                 </div>
@@ -144,8 +182,14 @@ const HistorySection = () => {
             <SwiperSlide>
               <br></br>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox
@@ -157,7 +201,10 @@ const HistorySection = () => {
                   </div>
                 </div>
                 <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
                     <span>2019</span>
                   </h4>
                 </div>
@@ -166,8 +213,14 @@ const HistorySection = () => {
 
             <SwiperSlide>
               <div className="carousel_item">
-                <div className="content_wrap">
-                  <div className="iconbox_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
                     <div className="item_content">
                       <h3 className="item_title">
                         We were thinking for Paradox

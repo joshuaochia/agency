@@ -1,15 +1,18 @@
-import NiceSelect from '@ui/niceSelect';
-import Link from 'next/link';
-import React from 'react';
+import NiceSelect from "@ui/niceSelect";
+import Link from "next/link";
+import React from "react";
 
 const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-  }
-  const selectHandler = e => {}
+  };
+  const selectHandler = (e) => {};
 
   return (
-    <section className="contact_section section_space_lg">
+    <section
+      style={{ background: "rgb(250, 250, 250)" }}
+      className="contact_section section_space_lg"
+    >
       <div className="container">
         <div className="section_heading">
           <h2 className="heading_subtitle text-uppercase">
@@ -17,9 +20,11 @@ const ContactSection = () => {
               <i className="fas fa-sharp fa-square-full"></i>
               <i className="fas fa-sharp fa-square-full"></i>
             </span>
-            <span>Contact Us</span>
+            <span style={{ color: "black" }}>Contact Us</span>
           </h2>
-          <h3 className="heading_title mb-0">Feel Free Contact Us</h3>
+          <h3 style={{ color: "black" }} className="heading_title mb-0">
+            Feel Free Contact Us
+          </h3>
         </div>
         <div className="row">
           <div className="col col-lg-6">

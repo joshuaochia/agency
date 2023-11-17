@@ -1,19 +1,34 @@
-import React from 'react';
-import about_image_1 from '@assets/images/about/about_image_1.png'
-import shape_circle_2 from '@assets/images/shapes/shape_circle_2.svg'
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import about_image_1 from "@assets/images/about/about_image_1.png";
+import shape_circle_2 from "@assets/images/shapes/shape_circle_2.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const DetailsAboutSection = () => {
   return (
-    <section className="about_section section_space_lg pb-0 decoration_wrap">
+    <section
+      style={{ background: "#FAFAFA" }}
+      className="about_section section_space_lg pb-0 decoration_wrap"
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col col-lg-6">
             <div className="about_image decoration_wrap mb-4 mb-lg-0 text-center">
-              <Image className="wow fadeInLeft" data-wow-delay=".1s" src={about_image_1} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+              <Image
+                className="wow fadeInLeft"
+                data-wow-delay=".1s"
+                src={about_image_1}
+                style={{ width: "100%", height: "100%" }}
+                alt="Paradox - About Image"
+              />
               <div className="deco_item shape_1">
-                <Image className="wow zoomIn" data-wow-delay=".1s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image
+                  className="wow zoomIn"
+                  data-wow-delay=".1s"
+                  src={shape_circle_2}
+                  style={{ width: "100%", height: "100%" }}
+                  alt="Paradox - Shape Image"
+                />
               </div>
             </div>
           </div>
@@ -25,16 +40,23 @@ const DetailsAboutSection = () => {
                     <i className="fas fa-sharp fa-square-full"></i>
                     <i className="fas fa-sharp fa-square-full"></i>
                   </span>
-                  <span>About US</span>
+                  <span style={{ color: "black" }}>About US</span>
                 </h2>
-                <h3 className="heading_title">
+                <h3 style={{ color: "black" }} className="heading_title">
                   Best for your Start-up Creative Agency
                 </h3>
-                <p className="heading_description">
-                  Our action plan is focused and planned. We are result oriented organization and are committed to invest in initiatives for newer expanded customer relationship. We always strive to enhance productivity and improve
+                <p style={{ color: "black" }} className="heading_description">
+                  Our action plan is focused and planned. We are result oriented
+                  organization and are committed to invest in initiatives for
+                  newer expanded customer relationship. We always strive to
+                  enhance productivity and improve
                 </p>
-                <p className="heading_description mb-0">
-                  A software development company that provides solutions for maximizing profits and converting clients ideas into reality.
+                <p
+                  style={{ color: "black" }}
+                  className="heading_description mb-0"
+                >
+                  A software development company that provides solutions for
+                  maximizing profits and converting clients ideas into reality.
                 </p>
               </div>
               <hr />
@@ -45,13 +67,17 @@ const DetailsAboutSection = () => {
                       <span className="list_item_icon">
                         <i className="fas fa-check"></i>
                       </span>
-                      <span className="list_item_text">Comprehensive Analysis</span>
+                      <span className="list_item_text">
+                        Comprehensive Analysis
+                      </span>
                     </li>
                     <li>
                       <span className="list_item_icon">
                         <i className="fas fa-check"></i>
                       </span>
-                      <span className="list_item_text">Mobile Friendly Web app</span>
+                      <span className="list_item_text">
+                        Mobile Friendly Web app
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -61,13 +87,17 @@ const DetailsAboutSection = () => {
                       <span className="list_item_icon">
                         <i className="fas fa-check"></i>
                       </span>
-                      <span className="list_item_text">Well Designed Web App</span>
+                      <span className="list_item_text">
+                        Well Designed Web App
+                      </span>
                     </li>
                     <li>
                       <span className="list_item_icon">
                         <i className="fas fa-check"></i>
                       </span>
-                      <span className="list_item_text">High Performance & Speed</span>
+                      <span className="list_item_text">
+                        High Performance & Speed
+                      </span>
                     </li>
                   </ul>
                 </div>
