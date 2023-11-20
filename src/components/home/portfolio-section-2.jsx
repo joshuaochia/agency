@@ -1,7 +1,51 @@
 import Link from "next/link";
 import React from "react";
+import PortfolioCategory from "./PortolioCategory";
+const PortfolioSectionTwo = ({ page, limit, data }) => {
+  console.log(data, "data");
+  const allTab = [
+    {
+      title: "View All",
+      dataBsTarget: "#nav-home",
+      ariaControls: "",
+    },
+    {
+      title: "Web Dev",
 
-const PortfolioSectionTwo = ({ item }) => {
+      dataBsTarget: "#nav-webdev",
+      ariaControls: "nav-webdev",
+    },
+    {
+      title: "Web Design",
+
+      dataBsTarget: "#nav-webdesign",
+      ariaControls: "nav-webdesign",
+    },
+    {
+      title: "Video Edit",
+
+      dataBsTarget: "#nav-videoedit",
+      ariaControls: "nav-videoedit",
+    },
+    {
+      title: "Discord Management",
+
+      dataBsTarget: "#nav-discordmanagement",
+      ariaControls: "nav-discordmanagement",
+    },
+    {
+      title: "Discord Dev",
+
+      dataBsTarget: "#nav-discorddev",
+      ariaControls: "#nav-discorddev",
+    },
+    {
+      title: "System Integration",
+
+      dataBsTarget: "#nav-systemint",
+      ariaControls: "nav-systemint",
+    },
+  ];
   return (
     <section
       style={{ backgroundColor: "#fafafa" }}
@@ -14,472 +58,83 @@ const PortfolioSectionTwo = ({ item }) => {
               <span style={{ color: "black" }}> Portfolio</span>
             </h2>
             <h3 style={{ color: "black" }} className="heading_title mb-0">
-              {item?.title ? `${item.title} Works ` : "My Best Works"}
+              {page?.title ? `${page.title} Works ` : "My Best Works"}
             </h3>
           </div>
           <div className="button-group filters-button-group style_2">
             <div className="portfolio_button">
               <nav>
                 <div className="nav" id="nav-tab" role="tablist">
-                  <button
-                    className="nav-link active"
-                    id="nav-home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-home"
-                    aria-selected="true"
-                  >
-                    View All
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="nav-profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-profile"
-                    aria-selected="false"
-                  >
-                    Graphics
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="nav-contact-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-contact"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-contact"
-                    aria-selected="false"
-                  >
-                    UI/UX
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="nav-wordpress-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-wordpress"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-wordpress"
-                    aria-selected="false"
-                  >
-                    WordPress
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="nav-webdesign-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-webdesign"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-webdesign"
-                    aria-selected="false"
-                  >
-                    Web Design
-                  </button>
+                  {allTab.map((tab, index) => (
+                    <button
+                      className={`nav-link ${index === 0 ? "active" : ""}`}
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target={tab.dataBsTarget}
+                      type="button"
+                      role="tab"
+                      aria-controls={tab.ariaControls}
+                      aria-selected="true"
+                    >
+                      {tab.title}
+                    </button>
+                  ))}
                 </div>
               </nav>
             </div>
           </div>
           <div className="tab-content" id="nav-tabContent">
-            <div
-              className="tab-pane fade show active"
-              id="nav-home"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
-              tabIndex="0"
-            >
-              <div className="grid row">
-                <div
-                  className="col col-lg-8 element-item webdesign"
-                  data-category="webdesign"
-                >
-                  <div className="portfolio_item layout_split">
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_4.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/portfolio">Life Style</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">
-                          3D Model for Travel App
-                        </Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text ">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col col-lg-4 element-item wordpress"
-                  data-category="wordpress"
-                >
-                  <div className="portfolio_item layout_boxed">
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/portfolio-grid">Meetup</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">Online Meetup App</Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_6.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col col-lg-4 element-item uiux"
-                  data-category="uiux"
-                >
-                  <div className="portfolio_item layout_boxed">
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/portfolio-details">Education</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">Education Website</Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_7.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col col-lg-8 element-item graphics"
-                  data-category="graphics"
-                >
-                  <div className="portfolio_item layout_split">
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_5.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/">Travel Agency</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">
-                          Online Reading Book App
-                        </Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_white.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="nav-profile"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
-              tabIndex="0"
-            >
-              <div className="row">
-                <div
-                  className="col col-lg-8 element-item webdesign"
-                  data-category="webdesign"
-                >
-                  <div className="portfolio_item layout_split">
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_4.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/portfolio-details">Life Style</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">
-                          3D Model for Travel App
-                        </Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_dark.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_danger.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="nav-contact"
-              role="tabpanel"
-              aria-labelledby="nav-contact-tab"
-              tabIndex="0"
-            >
-              <div className="row">
-                <div
-                  className="col col-lg-4 element-item wordpress"
-                  data-category="wordpress"
-                >
-                  <div className="portfolio_item layout_boxed">
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/">Meetup</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">Online Meetup App</Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_dark.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_danger.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_6.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="nav-wordpress"
-              role="tabpanel"
-              aria-labelledby="nav-wordpress-tab"
-              tabIndex="0"
-            >
-              <div className="row">
-                <div
-                  className="col col-lg-4 element-item uiux"
-                  data-category="uiux"
-                >
-                  <div className="portfolio_item layout_boxed">
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/service">Education</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">Education Website</Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_dark.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_danger.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_7.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="nav-webdesign"
-              role="tabpanel"
-              aria-labelledby="nav-webdesign-tab"
-              tabIndex="0"
-            >
-              <div className="row">
-                <div
-                  className="col col-lg-8 element-item graphics"
-                  data-category="graphics"
-                >
-                  <div className="portfolio_item layout_split">
-                    <div className="item_image">
-                      <Link href="/portfolio-details">
-                        <img
-                          src="assets/images/portfolio/portfolio_item_details_image_5.jpg"
-                          alt="Paradox Portfolio Image"
-                        />
-                      </Link>
-                    </div>
-                    <div className="item_content">
-                      <ul className="category_list unordered_list">
-                        <li>
-                          <Link href="/home-5">Travel Agency</Link>
-                        </li>
-                      </ul>
-                      <h3 className="item_title">
-                        <Link href="/portfolio-details">
-                          Online Reading Book App
-                        </Link>
-                      </h3>
-                      <p className="item_description">
-                        We help to generte positive cash flow & use the proceeds
-                        in further
-                      </p>
-                      <Link className="btn-link" href="/portfolio-details">
-                        <span className="btn_text">View Details</span>
-                        <span className="btn_icon">
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_dark.svg"
-                            alt="Paradox icons"
-                          />
-                          <img
-                            src="assets/images/icons/icon_arrow_down_right_danger.svg"
-                            alt="Paradox icons"
-                          />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <PortfolioCategory
+              data={data.all}
+              catID="nav-home"
+              arialabelledby={"nav-home-tab"}
+            />
+          </div>
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.webDev}
+              catID="nav-webdev"
+              arialabelledby={"nav-webdev-tab"}
+            />
+          </div>
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.webDesign}
+              catID="nav-webdesign"
+              arialabelledby={"nav-webdesign-tab"}
+            />
+          </div>
+
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.videoEdit}
+              catID="nav-videoedit"
+              arialabelledby={"nav-videoedit-tab"}
+            />
+          </div>
+
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.discordManagement}
+              catID="nav-discordmanagement"
+              arialabelledby={"nav-discordmanagement-tab"}
+            />
+          </div>
+
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.discordDev}
+              catID="nav-discorddev"
+              arialabelledby={"nav-discorddev-tab"}
+            />
+          </div>
+
+          <div className="tab-content" id="nav-tabContent">
+            <PortfolioCategory
+              data={data.systemInt}
+              catID="nav-systemint"
+              arialabelledby={"nav-systemint-tab"}
+            />
           </div>
         </div>
         <div

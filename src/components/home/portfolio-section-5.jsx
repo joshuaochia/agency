@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import React from 'react';
-import icon_arrow_down from '@assets/images/icons/icon_arrow_down_right_white.svg'
-import Image from 'next/image';
-import portfolio_data from '@data/common_data/portfolio-data';
+import Link from "next/link";
+import React from "react";
+import icon_arrow_down from "@assets/images/icons/icon_arrow_down_right_white.svg";
+import Image from "next/image";
+import portfolio_data from "@data/common_data/portfolio-data";
 
 const PortfolioSectionFive = () => {
   return (
@@ -14,16 +14,22 @@ const PortfolioSectionFive = () => {
               <h2 className="heading_subtitle">
                 <span>Our Work</span>
               </h2>
-              <h3 className="heading_title mb-0">
-                Our Latest Work
-              </h3>
+              <h3 className="heading_title mb-0">Our Latest Work</h3>
             </div>
             <div className="col col-lg-6 text-md-end col-md-5">
               <Link className="btn-link text-white" href="/portfolio">
                 <span className="btn_text">View All Work</span>
                 <span className="btn_icon">
-                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
-                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
+                  <Image
+                    src={icon_arrow_down}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="Paradox - Icon Arrow Down Right"
+                  />
+                  <Image
+                    src={icon_arrow_down}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="Paradox - Icon Arrow Down Right"
+                  />
                 </span>
               </Link>
             </div>
@@ -34,7 +40,11 @@ const PortfolioSectionFive = () => {
             <div className="portfolio_inline_item" key={item.id}>
               <div className="item_image">
                 <Link href={`/portfolio-details/${item.id}`}>
-                  <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                  <Image
+                    src={item.image}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="Paradox Portfolio Image"
+                  />
                 </Link>
               </div>
               <div className="item_content">
@@ -44,13 +54,14 @@ const PortfolioSectionFive = () => {
                   </Link>
                 </h3>
                 <ul className="category_list unordered_list">
-                  <li><Link href="/portfolio">{item?.Catagory_list}</Link></li>
+                  <li>
+                    <Link href="/portfolio">{item?.Catagory_list}</Link>
+                  </li>
                 </ul>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

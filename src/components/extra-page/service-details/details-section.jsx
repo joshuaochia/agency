@@ -61,60 +61,20 @@ const DetailsSection = ({ item }) => {
                 </div>
               </div>
               <div style={{ color: "black" }} className="col col-lg-6">
-                <p>
-                  A website development process is a documented, predictable set
-                  of steps to take to successfully complete a website
-                  development project or web application. This process helps to
-                  align development resources, stakeholders, and team members to
-                  ensure all aspects of the project are addressed and delivered
-                  on time
-                </p>
+                <p>{item.description}</p>
                 <ul className="icon_list unordered_list_block">
-                  <li>
-                    <span className="list_item_icon">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="list_item_text">
-                      Front-end web development is responsible for the look
-                    </span>
-                  </li>
-                  <li>
-                    <span className="list_item_icon">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="list_item_text">
-                      Back-end web development
-                    </span>
-                  </li>
-                  <li>
-                    <span className="list_item_icon">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="list_item_text">
-                      Testing and debugging code requires patience
-                    </span>
-                  </li>
+                  {item.service_facts?.map((fact) => (
+                    <li>
+                      <span className="list_item_icon">
+                        <i className="fas fa-check"></i>
+                      </span>
+                      <span className="list_item_text">{fact}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div className="section_space_lg">
-              {/* <div className="video_widget">
-                <Image
-                  src={service_details}
-                  style={{ width: "100%", height: "100%" }}
-                  alt="Paradox Service Video Poster"
-                />
-                <button
-                  type="button"
-                  className="video_play_icon popup_video"
-                  onClick={openVideoModal}
-                >
-                  <span className="icon_wrap" data-magnetic>
-                    <i className="fas fa-play"></i>
-                  </span>
-                </button>
-              </div> */}
-            </div>
+            <div className="section_space_lg"></div>
             <div className="row">
               <div className="col col-lg-4">
                 <div className="details_sectio_content mb-4 mb-lg-0">
@@ -143,92 +103,28 @@ const DetailsSection = ({ item }) => {
               </div>
               <div className="col col-lg-8">
                 <div className="row">
-                  <div className="col col-md-6">
-                    <div className="iconbox_item bg-white">
-                      <div className="item_icon">
-                        <Image
-                          src={icon_care}
-                          style={{ width: "100%", height: "100%" }}
-                          alt="Paradox Icon Eye White"
-                        />
-                      </div>
-                      <div style={{ color: "black" }} className="item_content">
-                        <h3 style={{ color: "black" }} className="item_title">
-                          UX
-                        </h3>
-                        <p className="mb-0">
-                          Client care always goes to the top of the list. It
-                          goes beyond just taking care of clients & making sure
-                          they are happy with your services. It is a genuine
-                          caring.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col col-md-6">
-                    <div className="iconbox_item bg-white">
-                      <div className="item_icon">
-                        <Image
-                          src={icon_together}
-                          style={{ width: "100%", height: "100%" }}
-                          alt="Paradox Icon Eye White"
-                        />
-                      </div>
-                      <div className="item_content">
-                        <h3 style={{ color: "black" }} className="item_title">
-                          UI
-                        </h3>
-                        <p style={{ color: "black" }} className="mb-0">
-                          This follows up with client care. By having empathy
-                          and being able to put yourself in your client’s shoes,
-                          you will be able to take client care to the next
-                          level.
-                        </p>
+                  {item.specific_service?.map((service) => (
+                    <div className="col col-md-6">
+                      <div className="iconbox_item bg-white">
+                        <div className="item_icon">
+                          <Image
+                            src={service.icon}
+                            style={{ width: "100%", height: "100%" }}
+                            alt="Paradox Icon Eye White"
+                          />
+                        </div>
+                        <div
+                          style={{ color: "black" }}
+                          className="item_content"
+                        >
+                          <h3 style={{ color: "black" }} className="item_title">
+                            {service.title}
+                          </h3>
+                          <p className="mb-0">{service.description}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col col-md-6">
-                    <div className="iconbox_item bg-white">
-                      <div className="item_icon">
-                        <Image
-                          src={icon_communication}
-                          style={{ width: "100%", height: "100%" }}
-                          alt="Paradox Icon Eye White"
-                        />
-                      </div>
-                      <div className="item_content">
-                        <h3 style={{ color: "black" }} className="item_title">
-                          Website Redesign
-                        </h3>
-                        <p style={{ color: "black" }} className="mb-0">
-                          This may sound obvious, but actually, there’s much
-                          more to learning how to communicate with a client.
-                          First, you must be able to speak openly
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col col-md-6">
-                    <div className="iconbox_item bg-white">
-                      <div className="item_icon">
-                        <Image
-                          src={icon_teaching}
-                          style={{ width: "100%", height: "100%" }}
-                          alt="Paradox Icon Eye White"
-                        />
-                      </div>
-                      <div className="item_content">
-                        <h3 style={{ color: "black" }} className="item_title">
-                          Website Copywriting
-                        </h3>
-                        <p style={{ color: "black" }} className="mb-0">
-                          The last on the list but one of the most important
-                          things you can do – giving back. By taking time to
-                          teach newbie devs and even mentoring a couple
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

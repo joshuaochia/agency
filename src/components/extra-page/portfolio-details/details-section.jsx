@@ -33,7 +33,7 @@ const DetailsSection = ({ item }) => {
             <div className="col col-lg-6">
               <div className="section_heading mb-0 mb-lg-5">
                 <h2 style={{ color: "black" }} className="heading_title mb-0">
-                  {item.title}
+                  {item?.title}
                 </h2>
               </div>
             </div>
