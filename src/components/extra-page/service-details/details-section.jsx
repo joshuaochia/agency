@@ -63,8 +63,8 @@ const DetailsSection = ({ item }) => {
               <div style={{ color: "black" }} className="col col-lg-6">
                 <p>{item.description}</p>
                 <ul className="icon_list unordered_list_block">
-                  {item.service_facts?.map((fact) => (
-                    <li>
+                  {item.service_facts?.map((fact, index) => (
+                    <li key={index + 1}>
                       <span className="list_item_icon">
                         <i className="fas fa-check"></i>
                       </span>
@@ -103,8 +103,8 @@ const DetailsSection = ({ item }) => {
               </div>
               <div className="col col-lg-8">
                 <div className="row">
-                  {item.specific_service?.map((service) => (
-                    <div className="col col-md-6">
+                  {item.specific_service?.map((service, index) => (
+                    <div key={index + 1} className="col col-md-6">
                       <div className="iconbox_item bg-white">
                         <div className="item_icon">
                           <Image

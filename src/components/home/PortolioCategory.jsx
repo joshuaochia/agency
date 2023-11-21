@@ -1,32 +1,34 @@
 import React from "react";
 import Link from "next/link";
+import * as cssStyles from "./PortfolioCategory.module.css";
 function isOdd(num) {
   return num % 2;
 }
 
-const PortfolioCategory = ({ catID, arialabelledby, data }) => {
+const PortfolioCategory = ({ catID, arialabelledby, data, active }) => {
   console.log(data, "fuckeme");
   return (
     <div
-      className="tab-pane fade"
+      className={`tab-pane fade  ${active}`}
       id={catID}
       role="tabpanel"
       aria-labelledby={arialabelledby}
       tabIndex="0"
     >
-      <div className="row">
-        {[1, 2, 3, 4, 5]?.map((item, index) => {
+      <div className={`row asd ${cssStyles.row_items}`}>
+        {data?.map((item, index) => {
           if (!isOdd(index)) {
             return (
               <div
+                key={index + 1}
                 className="col col-lg-8 element-item graphics"
                 data-category="graphics"
               >
                 <div className="portfolio_item layout_split">
                   <div className="item_image">
-                    <Link href="/portfolio-details">
+                    <Link href={`/portfolio-details/${item.slug}`}>
                       <img
-                        src="assets/images/portfolio/portfolio_item_details_image_5.jpg"
+                        src={item.thumbnailOne.url}
                         alt="Paradox Portfolio Image"
                       />
                     </Link>
@@ -34,19 +36,17 @@ const PortfolioCategory = ({ catID, arialabelledby, data }) => {
                   <div className="item_content">
                     <ul className="category_list unordered_list">
                       <li>
-                        <Link href="/home-5">Travel Agency</Link>
+                        <Link href="/home-5">{item.category.title}</Link>
                       </li>
                     </ul>
                     <h3 className="item_title">
-                      <Link href="/portfolio-details">
-                        Online Reading Book App
-                      </Link>
+                      <Link href="/portfolio-details">{item.title}</Link>
                     </h3>
-                    <p className="item_description">
-                      We help to generte positive cash flow & use the proceeds
-                      in further
-                    </p>
-                    <Link className="btn-link" href="/portfolio-details">
+                    <p className="item_description">{item.description}</p>
+                    <Link
+                      className="btn-link"
+                      href={`/portfolio-details/${item.slug}`}
+                    >
                       <span className="btn_text">View Details</span>
                       <span className="btn_icon">
                         <img
@@ -66,6 +66,7 @@ const PortfolioCategory = ({ catID, arialabelledby, data }) => {
           } else {
             return (
               <div
+                key={index + 1}
                 className="col col-lg-4 element-item wordpress"
                 data-category="wordpress"
               >
@@ -73,17 +74,19 @@ const PortfolioCategory = ({ catID, arialabelledby, data }) => {
                   <div className="item_content">
                     <ul className="category_list unordered_list">
                       <li>
-                        <Link href="/portfolio-grid">Meetup</Link>
+                        <Link href="/portfolio-grid">
+                          {item.category.title}
+                        </Link>
                       </li>
                     </ul>
                     <h3 className="item_title">
-                      <Link href="/portfolio-details">Online Meetup App</Link>
+                      <Link href="/portfolio-details"> {item.title}</Link>
                     </h3>
-                    <p className="item_description">
-                      We help to generte positive cash flow & use the proceeds
-                      in further
-                    </p>
-                    <Link className="btn-link" href="/portfolio-details">
+                    <p className="item_description">{item.description}</p>
+                    <Link
+                      className="btn-link"
+                      href={`/portfolio-details/${item.slug}`}
+                    >
                       <span className="btn_text">View Details</span>
                       <span className="btn_icon">
                         <img
@@ -98,9 +101,9 @@ const PortfolioCategory = ({ catID, arialabelledby, data }) => {
                     </Link>
                   </div>
                   <div className="item_image">
-                    <Link href="/portfolio-details">
+                    <Link href={`/portfolio-details/${item.slug}`}>
                       <img
-                        src="assets/images/portfolio/portfolio_item_details_image_6.jpg"
+                        src={item.thumbnailTwo.url}
                         alt="Paradox Portfolio Image"
                       />
                     </Link>

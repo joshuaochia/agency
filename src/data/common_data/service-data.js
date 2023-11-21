@@ -119,7 +119,7 @@ const service_data = [
   {
     id: 24,
     icon: <ServiceIconSix />,
-    slug: "system-automation",
+    slug: "system-integration",
     title: "System Automation /",
     titleTwo: "Integration",
     btn_icon: btn_icon_2,

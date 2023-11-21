@@ -11,7 +11,7 @@ import HeaderFour from "@layout/header/header-4";
 import HeroSectionFour from "@components/home/hero-section-4";
 import PortfolioSectionTwo from "@components/home/portfolio-section-2";
 
-const Index = () => {
+const Index = (props) => {
   return (
     <main className="overflow-hidden">
       <HeaderFour />
@@ -21,7 +21,7 @@ const Index = () => {
       <ServiceSectionFive />
       <ValueSection />
       <BrandSectionFive />
-      <PortfolioSectionTwo />
+      <PortfolioSectionTwo data={props.portfolioData} />
       {/* <TeamSection /> */}
       <ReviewSectionFive />
       <BlogSectionFive />

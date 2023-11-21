@@ -56,7 +56,7 @@ export async function getStaticProps() {
   );
 
   const data = await res.json();
-  console.log(data, "-------red");
+
   const items = data.data.portfolioCollection.items;
 
   const returnObject = {

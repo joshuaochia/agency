@@ -1,51 +1,65 @@
 import Link from "next/link";
 import React from "react";
 import PortfolioCategory from "./PortolioCategory";
-const PortfolioSectionTwo = ({ page, limit, data }) => {
-  console.log(data, "data");
-  const allTab = [
-    {
-      title: "View All",
-      dataBsTarget: "#nav-home",
-      ariaControls: "",
-    },
-    {
-      title: "Web Dev",
+const PortfolioSectionTwo = ({
+  page,
+  item,
+  limit,
+  data,
+  portfolioSingular,
+}) => {
+  let allTab = portfolioSingular
+    ? [
+        {
+          title: "View All",
+          dataBsTarget: "#nav-home",
+          ariaControls: "",
+        },
+      ]
+    : [
+        {
+          title: "View All",
+          dataBsTarget: "#nav-home",
+          ariaControls: "",
+        },
+        {
+          title: "Web Dev",
 
-      dataBsTarget: "#nav-webdev",
-      ariaControls: "nav-webdev",
-    },
-    {
-      title: "Web Design",
+          dataBsTarget: "#nav-webdev",
+          ariaControls: "nav-webdev",
+        },
+        {
+          title: "Web Design",
 
-      dataBsTarget: "#nav-webdesign",
-      ariaControls: "nav-webdesign",
-    },
-    {
-      title: "Video Edit",
+          dataBsTarget: "#nav-webdesign",
+          ariaControls: "nav-webdesign",
+        },
+        {
+          title: "Video Edit",
 
-      dataBsTarget: "#nav-videoedit",
-      ariaControls: "nav-videoedit",
-    },
-    {
-      title: "Discord Management",
+          dataBsTarget: "#nav-videoedit",
+          ariaControls: "nav-videoedit",
+        },
+        {
+          title: "Discord Management",
 
-      dataBsTarget: "#nav-discordmanagement",
-      ariaControls: "nav-discordmanagement",
-    },
-    {
-      title: "Discord Dev",
+          dataBsTarget: "#nav-discordmanagement",
+          ariaControls: "nav-discordmanagement",
+        },
+        {
+          title: "Discord Dev",
 
-      dataBsTarget: "#nav-discorddev",
-      ariaControls: "#nav-discorddev",
-    },
-    {
-      title: "System Integration",
+          dataBsTarget: "#nav-discorddev",
+          ariaControls: "#nav-discorddev",
+        },
+        {
+          title: "System Integration",
 
-      dataBsTarget: "#nav-systemint",
-      ariaControls: "nav-systemint",
-    },
-  ];
+          dataBsTarget: "#nav-systemint",
+          ariaControls: "nav-systemint",
+        },
+      ];
+
   return (
     <section
       style={{ backgroundColor: "#fafafa" }}
@@ -58,7 +72,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
               <span style={{ color: "black" }}> Portfolio</span>
             </h2>
             <h3 style={{ color: "black" }} className="heading_title mb-0">
-              {page?.title ? `${page.title} Works ` : "My Best Works"}
+              {item?.title ? `${item.title} Works ` : "My Best Works"}
             </h3>
           </div>
           <div className="button-group filters-button-group style_2">
@@ -67,6 +81,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
                 <div className="nav" id="nav-tab" role="tablist">
                   {allTab.map((tab, index) => (
                     <button
+                      key={index + 1}
                       className={`nav-link ${index === 0 ? "active" : ""}`}
                       id="nav-home-tab"
                       data-bs-toggle="tab"
@@ -85,6 +100,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
           </div>
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={"active show"}
               data={data.all}
               catID="nav-home"
               arialabelledby={"nav-home-tab"}
@@ -92,6 +108,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
           </div>
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.webDev}
               catID="nav-webdev"
               arialabelledby={"nav-webdev-tab"}
@@ -99,6 +116,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
           </div>
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.webDesign}
               catID="nav-webdesign"
               arialabelledby={"nav-webdesign-tab"}
@@ -107,6 +125,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
 
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.videoEdit}
               catID="nav-videoedit"
               arialabelledby={"nav-videoedit-tab"}
@@ -115,6 +134,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
 
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.discordManagement}
               catID="nav-discordmanagement"
               arialabelledby={"nav-discordmanagement-tab"}
@@ -123,6 +143,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
 
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.discordDev}
               catID="nav-discorddev"
               arialabelledby={"nav-discorddev-tab"}
@@ -131,6 +152,7 @@ const PortfolioSectionTwo = ({ page, limit, data }) => {
 
           <div className="tab-content" id="nav-tabContent">
             <PortfolioCategory
+              active={" "}
               data={data.systemInt}
               catID="nav-systemint"
               arialabelledby={"nav-systemint-tab"}

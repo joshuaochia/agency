@@ -10,15 +10,18 @@ import FooterFive from "@layout/footer/footer-5";
 import ReviewSectionFive from "@components/home/review-section-5";
 import PortfolioSectionTwo from "@components/home/portfolio-section-2";
 
-const Index = ({ item }) => {
-  console.log(item, "item");
+const Index = ({ item, portfolioData, portfolioSingular }) => {
   return (
     <>
       <HeaderFour />
       <main>
         <Breadcrumb title="Service Details" subTitle="Service Details" />
         <DetailsSection item={item} />
-        <PortfolioSectionTwo item={item} />
+        <PortfolioSectionTwo
+          portfolioSingular={portfolioSingular}
+          data={portfolioData}
+          item={item}
+        />
         <ReviewSectionFive />
 
         <FaqSection />
