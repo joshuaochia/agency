@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import about_image from "@assets/images/about/about_image_5.jpg";
+import about_image from "@assets/images/about/custom_about.png";
 import about_image_2 from "@assets/images/about/about_image_6.jpg";
 import shape_4 from "@assets/images/shapes/shape_4.svg";
 import shape_circle_3 from "@assets/images/shapes/shape_circle_3.svg";
@@ -53,20 +53,19 @@ const AboutSectionFive = () => {
                   <span>About Us</span>
                 </h2>
                 <h3 style={{ color: "black" }} className="heading_title">
-                  Welcome to Paradox for Business Consulting
+                  Were Cearn Creatives for trusted companies.
                 </h3>
                 <p
                   style={{ color: "black" }}
                   className="heading_description mb-0"
                 >
                   Our action plan is focused and planned. We are result oriented
-                  organization and are committed to invest in initiatives for
-                  newer expanded
+                  digital agency and we believe in communication clarity.
                 </p>
               </div>
               <div className="progress_item">
                 <h4 style={{ color: "black" }} className="item_title">
-                  Investment Planning
+                  Digital Design
                 </h4>
                 <div
                   style={{ border: "1px solid rgba(15, 14, 14, 0.1)" }}
@@ -90,7 +89,7 @@ const AboutSectionFive = () => {
               </div>
               <div className="progress_item mb-0">
                 <h4 style={{ color: "black" }} className="item_title">
-                  Online Consulting
+                  Digital Development
                 </h4>
                 <div
                   style={{ border: "1px solid rgba(15, 14, 14, 0.1)" }}

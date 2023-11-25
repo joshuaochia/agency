@@ -24,7 +24,7 @@ const menu_data = [
       { title: "Video Edit", link: "/service/video-edit" },
       { title: "Discord Management", link: "/service/discord-management" },
       { title: "Discord Development", link: "/service/discord-development" },
-      { title: "System Automation", link: "/service/system-automation" },
+      { title: "System Automation", link: "/service/system-integration" },
     ],
   },
 

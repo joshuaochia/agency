@@ -17,11 +17,10 @@ const PolicySection = () => {
               </div>
               <div className="item_content">
                 <h3 style={{ color: "black" }} className="item_title">
-                  Money Care
+                  Customer First Approach
                 </h3>
                 <p style={{ color: "black" }} className="mb-0">
-                  We help to generte positive cash flow and use the proceeds in
-                  further eansions
+                  We treat your customer as our own customer.
                 </p>
               </div>
             </div>
@@ -33,11 +32,11 @@ const PolicySection = () => {
               </div>
               <div className="item_content">
                 <h3 style={{ color: "black" }} className="item_title">
-                  Friendly Assistance
+                  Message Clarity
                 </h3>
                 <p style={{ color: "black" }} className="mb-0">
-                  We help to generte positive cash flow and use the proceeds in
-                  further eansions
+                  All of our service are tightly tailored to your business
+                  message/purpose.
                 </p>
               </div>
             </div>
@@ -49,11 +48,11 @@ const PolicySection = () => {
               </div>
               <div className="item_content">
                 <h3 style={{ color: "black" }} className="item_title">
-                  Client Investment
+                  Friendly Documentation
                 </h3>
                 <p style={{ color: "black" }} className="mb-0">
-                  We help to generte positive cash flow and use the proceeds in
-                  further eansions
+                  We create video/documentation for your future
+                  employee/agency/yourself.
                 </p>
               </div>
             </div>

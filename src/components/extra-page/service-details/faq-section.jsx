@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
-const FaqSection = () => {
+const FaqSection = ({ data }) => {
+  console.log(data, "data bitch");
   return (
     <section
       style={{ background: "#FAFAFA" }}
@@ -33,134 +34,34 @@ const FaqSection = () => {
           </div>
           <div className="col col-lg-8">
             <div className="accordion_wrap" id="faq_accordion">
-              <div className="accordion_item">
-                <h3 className="accordion_header m-0" id="heading_one">
-                  <button
-                    className="accordion_button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse_one"
-                    aria-expanded="true"
-                    aria-controls="collapse_one"
+              {data?.map((item) => (
+                <div className="accordion_item">
+                  <h3 className="accordion_header m-0" id="heading_four">
+                    <button
+                      className="accordion_button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse_four"
+                      aria-expanded="false"
+                      aria-controls="collapse_four"
+                    >
+                      {item.title}
+                    </button>
+                  </h3>
+                  <div
+                    id="collapse_four"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="heading_four"
+                    data-bs-parent="#faq_accordion"
                   >
-                    How much does a new website cost?
-                  </button>
-                </h3>
-                <div
-                  id="collapse_one"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="heading_one"
-                  data-bs-parent="#faq_accordion"
-                >
-                  <div className="accordion_body">
-                    <p style={{ color: "black" }} className="m-0">
-                      Regular maintenance is essential for a website to
-                      stabilize its flexibility and reliability. Proper
-                      maintenance would help in ensuring your{" "}
-                      <Link href="/policy-privacy">website’s security</Link>,
-                      invite new visitors, boost traffic and more. Of course, we
-                      can help you out with proper and professional website
-                      maintenance in addition to development as it supports
-                    </p>
+                    <div className="accordion_body">
+                      <p style={{ color: "black" }} className="m-0">
+                        {item.answer}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="accordion_item">
-                <h3 className="accordion_header m-0" id="heading_two">
-                  <button
-                    className="accordion_button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse_two"
-                    aria-expanded="false"
-                    aria-controls="collapse_two"
-                  >
-                    Will you maintain my site for me?
-                  </button>
-                </h3>
-                <div
-                  id="collapse_two"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading_two"
-                  data-bs-parent="#faq_accordion"
-                >
-                  <div className="accordion_body">
-                    <p style={{ color: "black" }} className="m-0">
-                      Regular maintenance is essential for a website to
-                      stabilize its flexibility and reliability. Proper
-                      maintenance would help in ensuring your{" "}
-                      <Link href="/policy-privacy">website’s security</Link>,
-                      invite new visitors, boost traffic and more. Of course, we
-                      can help you out with proper and professional website
-                      maintenance in addition to development as it supports
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion_item">
-                <h3 className="accordion_header m-0" id="heading_three">
-                  <button
-                    className="accordion_button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse_three"
-                    aria-expanded="false"
-                    aria-controls="collapse_three"
-                  >
-                    Will my website be mobile-friendly?
-                  </button>
-                </h3>
-                <div
-                  id="collapse_three"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading_three"
-                  data-bs-parent="#faq_accordion"
-                >
-                  <div className="accordion_body">
-                    <p style={{ color: "black" }} className="m-0">
-                      Regular maintenance is essential for a website to
-                      stabilize its flexibility and reliability. Proper
-                      maintenance would help in ensuring your{" "}
-                      <Link href="/policy-privacy">website’s security</Link>,
-                      invite new visitors, boost traffic and more. Of course, we
-                      can help you out with proper and professional website
-                      maintenance in addition to development as it supports
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion_item">
-                <h3 className="accordion_header m-0" id="heading_four">
-                  <button
-                    className="accordion_button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse_four"
-                    aria-expanded="false"
-                    aria-controls="collapse_four"
-                  >
-                    What if I need help on my site down the road?
-                  </button>
-                </h3>
-                <div
-                  id="collapse_four"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading_four"
-                  data-bs-parent="#faq_accordion"
-                >
-                  <div className="accordion_body">
-                    <p style={{ color: "black" }} className="m-0">
-                      Regular maintenance is essential for a website to
-                      stabilize its flexibility and reliability. Proper
-                      maintenance would help in ensuring your{" "}
-                      <Link href="/policy-privacy">website’s security</Link>,
-                      invite new visitors, boost traffic and more. Of course, we
-                      can help you out with proper and professional website
-                      maintenance in addition to development as it supports
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

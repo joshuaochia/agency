@@ -1,5 +1,5 @@
 import React from "react";
-import about_image_1 from "@assets/images/about/about_image_1.png";
+import about_image_1 from "@assets/images/about/first_about_image.png";
 import shape_circle_2 from "@assets/images/shapes/shape_circle_2.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,20 +43,24 @@ const DetailsAboutSection = () => {
                   <span style={{ color: "black" }}>About US</span>
                 </h2>
                 <h3 style={{ color: "black" }} className="heading_title">
-                  Best for your Start-up Creative Agency
+                  Credible Digital Innovation
                 </h3>
                 <p style={{ color: "black" }} className="heading_description">
-                  Our action plan is focused and planned. We are result oriented
-                  organization and are committed to invest in initiatives for
-                  newer expanded customer relationship. We always strive to
-                  enhance productivity and improve
+                  At Cearn Creatives, we're more than just a digital agency;
+                  we're your creative partners in the digital realm. With a
+                  passion for innovation and a commitment to excellence, we
+                  specialize in delivering top-notch services that elevate your
+                  online presence
                 </p>
                 <p
                   style={{ color: "black" }}
                   className="heading_description mb-0"
                 >
-                  A software development company that provides solutions for
-                  maximizing profits and converting clients ideas into reality.
+                  Where digital excellence converges with financial precision.
+                  As industry specialists catering to finance, including
+                  insurance, mortgage, fintech, forex brokers, stocks, and
+                  trading platforms like IQ Option, we bring a tailored approach
+                  to your unique sector.
                 </p>
               </div>
               <hr />
@@ -68,7 +72,7 @@ const DetailsAboutSection = () => {
                         <i className="fas fa-check"></i>
                       </span>
                       <span className="list_item_text">
-                        Comprehensive Analysis
+                        Cutting-Edge Design
                       </span>
                     </li>
                     <li>
@@ -76,7 +80,7 @@ const DetailsAboutSection = () => {
                         <i className="fas fa-check"></i>
                       </span>
                       <span className="list_item_text">
-                        Mobile Friendly Web app
+                        Versatile Expertise
                       </span>
                     </li>
                   </ul>
@@ -88,7 +92,7 @@ const DetailsAboutSection = () => {
                         <i className="fas fa-check"></i>
                       </span>
                       <span className="list_item_text">
-                        Well Designed Web App
+                        Cloud-Powered Solutions
                       </span>
                     </li>
                     <li>
@@ -96,14 +100,14 @@ const DetailsAboutSection = () => {
                         <i className="fas fa-check"></i>
                       </span>
                       <span className="list_item_text">
-                        High Performance & Speed
+                        Comprehensive Services
                       </span>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="btn_wrap">
-                <Link href="/service" className="bd-btn-link btn_primary">
+                <Link href="/contact" className="bd-btn-link btn_primary">
                   <span className="bd-button-content-wrapper">
                     <span className="bd-button-icon">
                       <i className="fa-light fa-arrow-right-long"></i>

@@ -8,12 +8,11 @@ import Wrapper from "@layout/wrapper";
 import React from "react";
 
 const Index = (props) => {
-  console.log(props, "data");
   return (
     <Wrapper>
       <SEO pageTitle={"Portfolio"} />
       <HeaderFour />
-      <Breadcrumb title="Portfolio Grid" subTitle="Portfolio Grid" />
+      <Breadcrumb title="Portfolio" subTitle="Portfolio" />
       <PortfolioSectionTwo data={props} />
       <FooterFive />
     </Wrapper>

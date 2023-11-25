@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import brand_1 from "@assets/images/clients/client_logo_1.png";
-import brand_2 from "@assets/images/clients/client_logo_2.png";
-import brand_3 from "@assets/images/clients/client_logo_3.png";
-import brand_4 from "@assets/images/clients/client_logo_4.png";
-import brand_5 from "@assets/images/clients/client_logo_5.png";
+import brand_1 from "@assets/images/clients/edocuments.png";
+import brand_2 from "@assets/images/clients/lustre.png";
+import brand_3 from "@assets/images/clients/measure_minds.png";
+import brand_4 from "@assets/images/clients/smidige.png";
+import brand_5 from "@assets/images/clients/united_nation.png";
 
 const BrandSectionFive = () => {
   return (
@@ -26,35 +26,35 @@ const BrandSectionFive = () => {
           <div className="client_logo_item">
             <Image
               src={brand_1}
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "150px", height: "100%" }}
               alt="Paradox Client Logo"
             />
           </div>
           <div className="client_logo_item">
             <Image
               src={brand_2}
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "150px", height: "100%" }}
               alt="Paradox Client Logo"
             />
           </div>
           <div className="client_logo_item">
             <Image
               src={brand_3}
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "150px", height: "100%" }}
               alt="Paradox Client Logo"
             />
           </div>
           <div className="client_logo_item">
             <Image
               src={brand_4}
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "150px", height: "100%" }}
               alt="Paradox Client Logo"
             />
           </div>
           <div className="client_logo_item">
             <Image
               src={brand_5}
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "150px", height: "100%" }}
               alt="Paradox Client Logo"
             />
           </div>

@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-import cta_image_5 from "@assets/images/calltoaction/cta_image_5.png";
+import cta_image_5 from "@assets/images/calltoaction/handshake.png";
 import shape_4 from "@assets/images/shapes/shape_4.svg";
 import site_logo_dark from "@assets/images/logo/site_logo_yellow_white.svg";
 import icon_mapmark from "@assets/images/icons/icon_mapmark.svg";
 
 import Image from "next/image";
 import Link from "next/link";
+import jsonp from "jsonp";
 
 const FooterFive = () => {
+  const [email, setEmail] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+
+    const url =
+      "https://gmail.us21.list-manage.com/subscribe/post-json?u=2af78308d81b24a6ae6724a50&amp;id=8f69005e48&amp;f_id=005de9e6f0";
+    jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
+      setIsSuccess(true);
+      setEmail("");
+    });
+  };
   return (
     <footer style={{ background: "#FAFAFA " }} className="site_footer style_4">
       <div className="calltoaction_section style_5">
@@ -100,7 +114,7 @@ const FooterFive = () => {
                 <h3 className="footer_widget_title">Contact Us</h3>
                 <div className="icon_list_widget">
                   <h4 className="widget_title mb-0">
-                    If you want to Get a New Idea:
+                    If you want to email us:
                   </h4>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -109,7 +123,7 @@ const FooterFive = () => {
                           style={{ color: "white" }}
                           className="list_item_text"
                         >
-                          contact@paradox.com
+                          contact@cearncreatives.com
                         </span>
                       </Link>
                     </li>
@@ -131,12 +145,12 @@ const FooterFive = () => {
                           style={{ color: "white" }}
                           className="list_item_text"
                         >
-                          1989 Timber Ridge Road{" "}
+                          Misamis Oriental
                           <small
                             style={{ color: "white" }}
                             className="d-md-block"
                           >
-                            Sacramento CA, California
+                            Cagayan De Oro City, Philippines
                           </small>
                         </span>
                       </Link>
@@ -148,10 +162,15 @@ const FooterFive = () => {
             <div className="col col-lg-3 col-md-6">
               <div className="footer_widget">
                 <h3 className="footer_widget_title">Newsletter</h3>
-                <form action="#">
+                <form>
                   <div className="small_newsletter_form">
-                    <input type="email" placeholder="Email Adreess" />
-                    <button type="submit">
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      placeholder="Email Adreess"
+                    />
+                    <button onClick={onSubmitHandler} type="submit">
                       <i className="far fa-arrow-right"></i>
                     </button>
                   </div>
@@ -159,6 +178,9 @@ const FooterFive = () => {
                     <input type="checkbox" id="checkMeOut" />
                     <label htmlFor="checkMeOut">Check me out</label>
                   </div> */}
+                  <p style={{ height: "16px", color: "#4BB543" }}>
+                    {isSuccess && "Susbribed successfully!"}
+                  </p>
                 </form>
               </div>
             </div>
@@ -172,14 +194,7 @@ const FooterFive = () => {
         <div className="container">
           <div className="footer_bottom_grid">
             <div style={{ color: "white" }} className="copyright_widget">
-              Copyright © 2023 by{" "}
-              <Link
-                target="_blank"
-                href="https://themeforest.net/user/bdevs/portfolio"
-              >
-                <u>Bdevs</u>
-              </Link>{" "}
-              All Rights Reserved.
+              Copyright © 2023 by Cearn Creatives
             </div>
             <div className="footer_social">
               <ul
@@ -187,7 +202,10 @@ const FooterFive = () => {
                 className="social_icon unordered_list_end"
               >
                 <li>
-                  <Link href="https://www.facebook.com/" target="_blank">
+                  <Link
+                    href="https://www.facebook.com/cearncreatives"
+                    target="_blank"
+                  >
                     <i
                       style={{ color: "white" }}
                       className="fab fa-facebook-f"
@@ -195,18 +213,24 @@ const FooterFive = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://twitter.com/" target="_blank">
+                  <Link
+                    href="https://www.linkedin.com/company/cearn-creatives/"
+                    target="_blank"
+                  >
                     <i
                       style={{ color: "white" }}
-                      className="fab fa-twitter"
+                      className="fab fa-linkedin"
                     ></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.youtube.com/" target="_blank">
+                  <Link
+                    href="https://instagram.com/cearncreatives"
+                    target="_blank"
+                  >
                     <i
                       style={{ color: "white" }}
-                      className="fab fa-youtube"
+                      className="fab fa-instagram"
                     ></i>
                   </Link>
                 </li>

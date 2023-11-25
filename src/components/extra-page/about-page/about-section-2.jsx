@@ -1,22 +1,12 @@
 import React, { useState } from "react";
-import video_poster_image from "@assets/images/video/video_poster_image_1.jpg";
+import video_poster_image from "@assets/images/video/video_static_2.png";
 import icon_eye_white from "@assets/images/icons/icon_eye_white.svg";
 import icon_dart_board from "@assets/images/icons/icon_dart_board_white.svg";
 import Image from "next/image";
-import ModalVideo from "react-modal-video";
 
 const AboutSectionTwo = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const openVideoModal = () => setIsOpen(!isOpen);
   return (
     <>
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setIsOpen(false)}
-      />
       <section style={{ background: "black" }} className="about_section_2">
         <div className="video_widget rounded-0">
           <Image
@@ -24,17 +14,6 @@ const AboutSectionTwo = () => {
             style={{ width: "100%", height: "100%" }}
             alt="Paradox Video Poster Image"
           />
-          <button
-            type="button"
-            className="video_play_icon popup_video"
-            onClick={() => {
-              openVideoModal();
-            }}
-          >
-            <span className="icon_wrap" data-magnetic>
-              <i className="fas fa-play"></i>
-            </span>
-          </button>
         </div>
         <div style={{ background: "black" }} className="container">
           <div className="row align-items-center m-0">
@@ -49,12 +28,12 @@ const AboutSectionTwo = () => {
                     <span>Who we Are</span>
                   </h2>
                   <h3 className="heading_title">
-                    We Can do Every Single IT Solution together
+                    Leading digital solutions for financial excellence.
                   </h3>
                   <p className="heading_description mb-0">
-                    A software development company that provides solutions for
-                    maximizing profits and converting clients ideas into
-                    reality.
+                    We deliver cutting-edge digital solutions for the finance
+                    industry, seamlessly integrating design, technology, and
+                    strategy to elevate brands and redefine online experiences.
                   </p>
                 </div>
                 <div className="mission_vision row">
@@ -70,7 +49,7 @@ const AboutSectionTwo = () => {
                       <div className="item_content">
                         <h3 className="item_title">Our Vision</h3>
                         <p className="mb-0">
-                          We are help generate positive the cash floinvest
+                          Revolutionizing finance through digital brilliance.
                         </p>
                       </div>
                     </div>
@@ -87,7 +66,7 @@ const AboutSectionTwo = () => {
                       <div className="item_content">
                         <h3 className="item_title">Our Mission</h3>
                         <p className="mb-0">
-                          We are help generate positive the cash floinvest
+                          Elevating brands through innovative digital solutions.
                         </p>
                       </div>
                     </div>
@@ -103,7 +82,7 @@ const AboutSectionTwo = () => {
                   </div>
                   <div className="review_text">
                     <span className="odometer" data-count="200">
-                      0
+                      8
                     </span>
                     <span>+ Client Review</span>
                   </div>

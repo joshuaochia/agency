@@ -1,5 +1,5 @@
 import React from "react";
-import about_image_1 from "@assets/images/about/about_image_9.jpg";
+import about_image_1 from "@assets/images/about/custom_about_2.png";
 import about_image_2 from "@assets/images/about/about_image_6.jpg";
 import shape_circle_1 from "@assets/images/shapes/shape_6.svg";
 import shape_circle_2 from "@assets/images/shapes/shape_circle_7.svg";
@@ -44,26 +44,26 @@ const ValueSection = () => {
                 /> */}
               </div>
               <div className="deco_item shape_2">
-                <Image
+                {/* <Image
                   data-parallax='{"y" : -150, "smoothness": 20}'
                   src={shape_circle_2}
                   style={{ width: "100%", height: "100%" }}
                   alt="Paradox - Shape Image"
-                />
+                /> */}
               </div>
               <div className="deco_item shape_3">
-                <Image
+                {/* <Image
                   src={shape_circle_3}
                   style={{ width: "100%", height: "100%" }}
                   alt="Paradox - Shape Image"
-                />
+                /> */}
               </div>
               <div className="deco_item chart_image">
-                <Image
+                {/* <Image
                   src={about_image_10}
                   style={{ width: "100%", height: "100%" }}
                   alt="Paradox - Shape Image"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -81,7 +81,8 @@ const ValueSection = () => {
                   <span>Our Values</span>
                 </h2>
                 <h3 style={{ color: "black" }} className="heading_title mb-0">
-                  Clear Thinking Makes a Bright Future
+                  Crafting trust-centric journeys that redefine business success
+                  stories.
                 </h3>
               </div>
               <div className="our_value_iconbox row">
@@ -96,11 +97,11 @@ const ValueSection = () => {
                     </div>
                     <div className="item_content">
                       <h3 style={{ color: "black" }} className="item_title">
-                        User Friendly
+                        Client Friendly
                       </h3>
                       <p style={{ color: "black" }} className="mb-0">
-                        Focused and planned. We are result oriented organize and
-                        are committee to invest
+                        From onboarding, planning and excuting are enjoyable yet
+                        result oriented.
                       </p>
                     </div>
                   </div>
@@ -116,11 +117,10 @@ const ValueSection = () => {
                     </div>
                     <div className="item_content">
                       <h3 style={{ color: "black" }} className="item_title">
-                        Best Support
+                        User Trusted
                       </h3>
                       <p style={{ color: "black" }} className="mb-0">
-                        Focused and planned. We are result oriented organize and
-                        are committee to invest
+                        Building digital product that stand out and user trust.
                       </p>
                     </div>
                   </div>

@@ -7,8 +7,8 @@ const CounterSection = () => {
   const factList = [
     {
       id: 1,
-      factTitle: "Worldwide Happy Client",
-      factNumber: "2000",
+      factTitle: " Happy Client",
+      factNumber: "10",
       data_count: "2400",
       data_parallax: '{"y" : 30, "smoothness": 10}',
       adition: "+",
@@ -16,14 +16,14 @@ const CounterSection = () => {
     {
       id: 2,
       factTitle: "Completed Project",
-      factNumber: "9250",
+      factNumber: "20",
       data_count: "1690",
       adition: "+",
     },
     {
       id: 3,
       factTitle: "Client Satisfaction",
-      factNumber: "3200",
+      factNumber: "99",
       data_count: "100",
       data_parallax: '{"y" : -30, "smoothness": 10}',
       adition: "%",

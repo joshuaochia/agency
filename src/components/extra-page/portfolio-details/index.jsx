@@ -10,7 +10,7 @@ const Index = ({ item }) => {
     <>
       <HeaderFour />
       <main>
-        <Breadcrumb title="Portfolio Details" subTitle="Portfolio Details" />
+        <Breadcrumb title={item.title} subTitle="Portfolio Details" />
         <DetailsSection item={item} />
         {/* <CollectionSection /> */}
       </main>

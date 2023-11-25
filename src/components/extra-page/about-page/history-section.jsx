@@ -21,7 +21,7 @@ const HistorySection = () => {
             <span style={{ color: "#373745" }}>Our History</span>
           </h2>
           <h3 style={{ color: "#373745" }} className="heading_title mb-0">
-            Journey of Paradox
+            Cearn Creatives
           </h3>
         </div>
       </div>
@@ -71,17 +71,20 @@ const HistorySection = () => {
                   >
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        We were thinking for creating a Finance focus agency
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        To help them stand out beautifully and secure.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
-                    <span>2002</span>
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
+                    <span>2021</span>
                   </h4>
                 </div>
               </div>
@@ -98,10 +101,11 @@ const HistorySection = () => {
                   >
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        Choosing services & branding
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We perform a lot of research and gather some portfolio
+                        to show off.
                       </p>
                     </div>
                   </div>
@@ -111,7 +115,7 @@ const HistorySection = () => {
                     style={{ color: "#373745" }}
                     className="year_text m-0 text-center"
                   >
-                    <span>2004</span>
+                    <span>2022</span>
                   </h4>
                 </div>
               </div>
@@ -128,11 +132,10 @@ const HistorySection = () => {
                     className="iconbox_item"
                   >
                     <div className="item_content">
-                      <h3 className="item_title">
-                        We were thinking for Paradox
-                      </h3>
+                      <h3 className="item_title">Start of Cearn Creatives</h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We start helping Forex, Stock, and Cost management web
+                        apps.
                       </p>
                     </div>
                   </div>
@@ -142,98 +145,39 @@ const HistorySection = () => {
                     style={{ color: "#373745" }}
                     className="year_text m-0 text-center"
                   >
-                    <span>2010</span>
-                  </h4>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="carousel_item">
-                <div
-                  style={{ backgroundColor: "#373745" }}
-                  className="content_wrap"
-                >
-                  <div
-                    style={{ backgroundColor: "#373745" }}
-                    className="iconbox_item"
-                  >
-                    <div className="item_content">
-                      <h3 className="item_title">
-                        We were thinking for Paradox
-                      </h3>
-                      <p className="mb-0">
-                        We are help generate positive the cash floinvest
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content_wrap">
-                  <h4
-                    style={{ color: "#373745" }}
-                    className="year_text m-0 text-center"
-                  >
-                    <span>2014</span>
-                  </h4>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <br></br>
-              <div className="carousel_item">
-                <div
-                  style={{ backgroundColor: "#373745" }}
-                  className="content_wrap"
-                >
-                  <div
-                    style={{ backgroundColor: "#373745" }}
-                    className="iconbox_item"
-                  >
-                    <div className="item_content">
-                      <h3 className="item_title">
-                        We were thinking for Paradox
-                      </h3>
-                      <p className="mb-0">
-                        We are help generate positive the cash floinvest
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content_wrap">
-                  <h4
-                    style={{ color: "#373745" }}
-                    className="year_text m-0 text-center"
-                  >
-                    <span>2019</span>
-                  </h4>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="carousel_item">
-                <div
-                  style={{ backgroundColor: "#373745" }}
-                  className="content_wrap"
-                >
-                  <div
-                    style={{ backgroundColor: "#373745" }}
-                    className="iconbox_item"
-                  >
-                    <div className="item_content">
-                      <h3 className="item_title">
-                        We were thinking for Paradox
-                      </h3>
-                      <p className="mb-0">
-                        We are help generate positive the cash floinvest
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content_wrap">
-                  <h4 className="year_text m-0 text-center">
                     <span>2023</span>
+                  </h4>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="carousel_item">
+                <div
+                  style={{ backgroundColor: "#373745" }}
+                  className="content_wrap"
+                >
+                  <div
+                    style={{ backgroundColor: "#373745" }}
+                    className="iconbox_item"
+                  >
+                    <div className="item_content">
+                      <h3 className="item_title">
+                        Offering wide range of service
+                      </h3>
+                      <p className="mb-0">
+                        We ought to expand are services to become one stop
+                        digital solution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="content_wrap">
+                  <h4
+                    style={{ color: "#373745" }}
+                    className="year_text m-0 text-center"
+                  >
+                    <span>Present </span>
                   </h4>
                 </div>
               </div>

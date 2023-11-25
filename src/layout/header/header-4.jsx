@@ -33,8 +33,7 @@ const HeaderFour = () => {
         <div className="container">
           <div
             style={{
-              backgroundColor: "rgba(255,255,255,0.9)",
-              backdropFilter: "blur(20px)",
+              backgroundColor: "rgba(255,255,255,1)",
             }}
             className="content_box"
           >
@@ -42,7 +41,7 @@ const HeaderFour = () => {
               <div className="site_logo">
                 <Link className="site_link" href="/">
                   <Image
-                    width={200}
+                    width={160}
                     src={site_logo}
                     alt="Site Logo - Paradox - Agency Template"
                   />

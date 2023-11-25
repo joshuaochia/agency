@@ -5,14 +5,14 @@ import HomeFiveMain from "@components/home";
 export default function HomeFive(props) {
   return (
     <Wrapper>
-      <SEO pageTitle={"Home Five"} />
+      <SEO pageTitle={"Home"} />
       <HomeFiveMain portfolioData={props.portfolioData} />
     </Wrapper>
   );
 }
 
 export async function getStaticProps() {
-  const query = `query {
+  const query = `query {  
     portfolioCollection (limit: 10) {
       items {
         slug

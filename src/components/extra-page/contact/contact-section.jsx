@@ -1,11 +1,13 @@
 import NiceSelect from "@ui/niceSelect";
 import Link from "next/link";
 import React from "react";
-
+import { useForm, ValidationError } from "@formspree/react";
 const ContactSection = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  const [state, handleSubmit] = useForm("xyyqqyny");
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
   const selectHandler = (e) => {};
 
   return (
@@ -29,7 +31,7 @@ const ContactSection = () => {
         <div className="row">
           <div className="col col-lg-6">
             <div className="contact_form">
-              <form onSubmit={handleSubmit} action="#">
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col col-md-6">
                     <div className="form-group m-0">
@@ -70,16 +72,20 @@ const ContactSection = () => {
                             value: "Website Development",
                             text: "Website Development",
                           },
-                          { value: "UX/UI Design", text: "UX/UI Design" },
-                          { value: "App Development", text: "App Development" },
+                          { value: "Website Design", text: "Website Design" },
+
                           { value: "Video Editing", text: "Video Editing" },
                           {
-                            value: "Programming & Tech",
-                            text: "Programming & Tech",
+                            value: "Discord Management",
+                            text: "Discord Management",
                           },
                           {
-                            value: "Business Consuting",
-                            text: "Business Consuting",
+                            value: "Discord Development",
+                            text: "Discord Development",
+                          },
+                          {
+                            value: "System Automation",
+                            text: "System Automation",
                           },
                         ]}
                         defaultCurrent={0}
@@ -112,42 +118,57 @@ const ContactSection = () => {
                   </div>
                 </div>
               </form>
+              {state.succeeded && (
+                <p style={{ color: "#4BB543", marginTop: "10px" }}>
+                  Email sent successfully! We will reach back between 1-2
+                  working days.
+                </p>
+              )}
+
+              {state.errors && (
+                <p style={{ color: "#cc0000", marginTop: "10px" }}>
+                  Something went wrong please try again.
+                </p>
+              )}
             </div>
           </div>
           <div className="col col-lg-6">
             <ul className="contact_info_list style_2 ps-lg-4 unordered_list_block">
               <li>
-                <strong>Loaction:</strong>
-                <span>1989 Timber Ridge Road Sacramento CA, California</span>
+                <strong>Location:</strong>
+                <span>Philippines, Cagayan De Oro 9000</span>
               </li>
-              <li>
-                <strong>Phone:</strong>
-                <span>+1-202-555-0149</span>
-              </li>
+
               <li>
                 <strong>Email:</strong>
-                <span>contact@paradox.com</span>
+                <span>contact@cearncreatives.com</span>
               </li>
               <li>
                 <strong>Opening:</strong>
-                <span>10am - 6pm, Friday Close</span>
+                <span>8am - 5pm, Sunday Close</span>
               </li>
               <li>
                 <strong>Follow Us:</strong>
                 <ul className="social_icon unordered_list">
                   <li>
-                    <Link href="https://www.facebook.com/" target="_blank">
+                    <Link
+                      href="https://www.facebook.com/cearncreatives"
+                      target="_blank"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://twitter.com/" target="_blank">
-                      <i className="fab fa-twitter"></i>
+                    <Link
+                      href="https://www.linkedin.com/company/cearn-creatives/"
+                      target="_blank"
+                    >
+                      <i className="fab fa-linkedin"></i>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://www.youtube.com/" target="_blank">
-                      <i className="fab fa-youtube"></i>
+                      <i className="fab fa-instagram"></i>
                     </Link>
                   </li>
                 </ul>

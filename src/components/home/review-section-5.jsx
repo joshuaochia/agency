@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import video_poster_img from "@assets/images/video/video_poster_image_2.jpg";
+import video_poster_img from "@assets/images/video/video_static.png";
 import Image from "next/image";
 import review_data from "@data/common_data/review-data";
 
@@ -39,13 +39,6 @@ const ReviewSectionFive = () => {
 
   return (
     <>
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setIsOpen(false)}
-      />
       <section
         style={{ backgroundColor: "#090910" }}
         className="review_section bg_light position-relative"
@@ -60,17 +53,6 @@ const ReviewSectionFive = () => {
                     style={{ width: "100%", height: "100%" }}
                     alt="Paradox Video Poster Image"
                   />
-                  <button
-                    type="button"
-                    className="video_play_icon popup_video"
-                    onClick={() => {
-                      openVideoModal();
-                    }}
-                  >
-                    <span className="icon_wrap" data-magnetic>
-                      <i className="fas fa-play"></i>
-                    </span>
-                  </button>
                 </div>
               </div>
             </div>
@@ -78,7 +60,7 @@ const ReviewSectionFive = () => {
               <div className="review_carousel_4">
                 <div className="common_carousel_1col row">
                   <Slider {...settings} ref={sliderRef}>
-                    {review_data.slice(0, 3).map((item) => (
+                    {review_data.slice(0, 5).map((item) => (
                       <div className="carousel_item col" key={item.id}>
                         <div className="review_item style_3">
                           <h3 className="review_title">{item.title}</h3>
