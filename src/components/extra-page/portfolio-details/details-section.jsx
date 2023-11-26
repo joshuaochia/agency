@@ -75,8 +75,8 @@ const DetailsSection = ({ item }) => {
           </h3>
           <p style={{ color: "black" }}>{item.problem}</p>
           <div className="row mb-5">
-            {item.portfolioOpportunitiesCollection?.items?.map((opp) => (
-              <div className="col col-lg-4 col-md-6">
+            {item.portfolioOpportunitiesCollection?.items?.map((opp, index) => (
+              <div key={index + 1} className="col col-lg-4 col-md-6">
                 <div className="iconbox_item bg-white">
                   <div className="item_icon">
                     <img
@@ -126,8 +126,8 @@ const DetailsSection = ({ item }) => {
             <div className="col col-lg-6">
               <p style={{ color: "black" }}>{item.whatWeDid}</p>
               <ul className="icon_list unordered_list_block">
-                {item.whatWeDidList?.map((list) => (
-                  <li>
+                {item.whatWeDidList?.map((list, index) => (
+                  <li key={index + 1}>
                     <span className="list_item_icon">
                       <i className="fas fa-check"></i>
                     </span>
@@ -139,8 +139,8 @@ const DetailsSection = ({ item }) => {
           </div>
 
           <div className="row mb-4">
-            {item.photoResultsCollection?.items.map((photo) => (
-              <div className="col col-md-6">
+            {item.photoResultsCollection?.items.map((photo, index) => (
+              <div key={index + 1} className="col col-md-6">
                 <div className="details_item_image m-0">
                   <img
                     src={photo.url}

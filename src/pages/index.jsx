@@ -51,7 +51,7 @@ export async function getStaticProps() {
   const items = data.data.portfolioCollection.items;
 
   const returnObject = {
-    all: items,
+    all: items ? items : [],
     webDesign: items.filter((item) => item.category.title === "Web Design"),
     webDev: items.filter((item) => item.category.title === "Web Dev"),
     videoEdit: items.filter((item) => item.category.title === "Video Edit"),

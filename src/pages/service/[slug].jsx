@@ -62,7 +62,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       portfolioData: {
-        all: finalData,
+        all: finalData ? finalData : [],
         webDesign: [],
         webDev: [],
         videoEdit: [],

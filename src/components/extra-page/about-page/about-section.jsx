@@ -46,11 +46,11 @@ const DetailsAboutSection = () => {
                   Credible Digital Innovation
                 </h3>
                 <p style={{ color: "black" }} className="heading_description">
-                  At Cearn Creatives, we're more than just a digital agency;
-                  we're your creative partners in the digital realm. With a
-                  passion for innovation and a commitment to excellence, we
-                  specialize in delivering top-notch services that elevate your
-                  online presence
+                  At Cearn Creatives, we&apos;re more than just a digital
+                  agency; we&apos;re your creative partners in the digital
+                  realm. With a passion for innovation and a commitment to
+                  excellence, we specialize in delivering top-notch services
+                  that elevate your online presence
                 </p>
                 <p
                   style={{ color: "black" }}

@@ -34,8 +34,8 @@ const FaqSection = ({ data }) => {
           </div>
           <div className="col col-lg-8">
             <div className="accordion_wrap" id="faq_accordion">
-              {data?.map((item) => (
-                <div className="accordion_item">
+              {data?.map((item, index) => (
+                <div key={index + 1} className="accordion_item">
                   <h3 className="accordion_header m-0" id="heading_four">
                     <button
                       className="accordion_button collapsed"
