@@ -6,7 +6,41 @@ import ServiceIconThere from "@svg/service-icon-3";
 import ServiceIconFour from "@svg/service-icon-4";
 import ServiceIconFive from "@svg/service-icon-5";
 import ServiceIconSix from "@svg/service-icon-6";
+
 import icon_together from "@assets/images/icons/icon_together_primary.svg";
+
+// Web Dev Icons Import
+import webflow from "@assets/images/icons/services-icons/web-dev/webflow.svg";
+import nextjs from "@assets/images/icons/services-icons/web-dev/nextjs.svg";
+import gatsbyjs from "@assets/images/icons/services-icons/web-dev/gatsbyjs.svg";
+import wordpress from "@assets/images/icons/services-icons/web-dev/wordpress.svg";
+
+// Web Design Icons Import
+import uxui from "@assets/images/icons/services-icons/web-design/uxui.svg";
+import b2b from "@assets/images/icons/services-icons/web-design/b2b.svg";
+import mobileapp from "@assets/images/icons/services-icons/web-design/mobileapp.svg";
+import landing from "@assets/images/icons/services-icons/web-design/landing.svg";
+
+// Video Edit
+import youtube from "@assets/images/icons/services-icons/video-edit/youtube.svg";
+import tiktok from "@assets/images/icons/services-icons/video-edit/tiktok.svg";
+import instagram from "@assets/images/icons/services-icons/video-edit/instagram.svg";
+
+// Discord Management
+import management from "@assets/images/icons/services-icons/discord-management/management.svg";
+import growth from "@assets/images/icons/services-icons/discord-management/growth.svg";
+import event from "@assets/images/icons/services-icons/discord-management/event.svg";
+
+// Discord Development
+import bot from "@assets/images/icons/services-icons/discord-development/bot.svg";
+import channel from "@assets/images/icons/services-icons/discord-development/channel.svg";
+import feature from "@assets/images/icons/services-icons/discord-development/feature.svg";
+
+// System Automation
+import zapier from "@assets/images/icons/services-icons/system-automation/zapier.svg";
+import mailchimp from "@assets/images/icons/services-icons/system-automation/mailchimp.svg";
+import google from "@assets/images/icons/services-icons/system-automation/google.svg";
+import workflow from "@assets/images/icons/services-icons/system-automation/workflow.svg";
 
 const service_data = [
   {
@@ -28,22 +62,22 @@ const service_data = [
     specific_service: [
       {
         title: "Webflow",
-        icon: icon_together,
+        icon: webflow,
         description: `We believe on  designer first approach and excel in Webflow development, seamlessly blending creativity and functionality.`,
       },
       {
         title: "Nextjs",
-        icon: icon_together,
+        icon: nextjs,
         description: `3+yrs expertise in Next.js development, where we excel in crafting dynamic and high-performance applications. Ensuring cutting-edge and user-friendly website.`,
       },
       {
         title: "Gatsbyjs",
-        icon: icon_together,
+        icon: gatsbyjs,
         description: `Our proficiency in Gatsby allows us to deliver high-performance solutions, leveraging its power to create lightning-fast and scalable websites.`,
       },
       {
         title: "Wordpress ",
-        icon: icon_together,
+        icon: wordpress,
         description: `Utilizing its versatile platform to create customizable, user-friendly websites. We harness the full potential of WordPress to enhance your digital presence.`,
       },
     ],
@@ -84,22 +118,22 @@ const service_data = [
     specific_service: [
       {
         title: "General UX/UI",
-        icon: icon_together,
+        icon: uxui,
         description: `Meticulously designed with user experience in mind using Figma/Adobe XD, we ensure seamless navigation and engagement across various platforms.`,
       },
       {
         title: "B2B Design",
-        icon: icon_together,
+        icon: b2b,
         description: `Elevate your brand. We specialize in crafting professional websites that not only showcase your business but also resonate to your target audience`,
       },
       {
         title: "Web/Mobile Apps",
-        icon: icon_together,
+        icon: mobileapp,
         description: `Harness the power of innovation with our Web/Mobile Apps Design expertise. Whether it's a responsive web application or a sleek mobile app.`,
       },
       {
         title: "Landing Page",
-        icon: icon_together,
+        icon: landing,
         description: `Make a lasting first impression with our Landing Page designs. Optimized for conversions, our designs are crafted to captivate and engage visitors.`,
       },
     ],
@@ -141,17 +175,17 @@ const service_data = [
     specific_service: [
       {
         title: "Youtube shorts",
-        icon: icon_together,
+        icon: youtube,
         description: `Dive into the world of YouTube Shorts with our specialized video editing services designed to elevate your short-form content game.`,
       },
       {
         title: "Instagram reels",
-        icon: icon_together,
+        icon: instagram,
         description: `Client care always goes to the top of the list. It goes beyond just taking care of clients & making sure they are happy with your services. It is a genuine caring.`,
       },
       {
         title: "Tiktok Edits",
-        icon: icon_together,
+        icon: tiktok,
         description: `Client care always goes to the top of the list. It goes beyond just taking care of clients & making sure they are happy with your services. It is a genuine caring.`,
       },
     ],
@@ -190,17 +224,17 @@ const service_data = [
     specific_service: [
       {
         title: "Management/Engageement",
-        icon: icon_together,
+        icon: management,
         description: `We handle the day-to-day operations, fostering a positive atmosphere, moderating discussions, and actively engaging with community members. `,
       },
       {
         title: "Growth Strategy",
-        icon: icon_together,
+        icon: growth,
         description: `Take your Discord community to new heights with our Growth Strategy Implementation service. We work to execute tailored strategies `,
       },
       {
         title: "Event promotion strategy",
-        icon: icon_together,
+        icon: event,
         description: `Elevate your Discord experience with our Event Promotion Strategy. We craft and implement dynamic strategies to promote and host events within your community.`,
       },
     ],
@@ -241,20 +275,20 @@ const service_data = [
     specific_service: [
       {
         title: "Custom Bot Development  ",
-        icon: icon_together,
+        icon: bot,
         description: `Empower your server with tailored bots designed to meet your specific needs. From moderation and automated tasks to interactive games and engagement features.`,
       },
 
       {
         title: "Channel Creation & Optimize",
-        icon: icon_together,
+        icon: channel,
         description: `Transform your server layout with strategically designed channels that optimize user experience. Our developers create and optimize channels based on your server's objectives.
 
         `,
       },
       {
         title: "Integration of Features",
-        icon: icon_together,
+        icon: feature,
         description: `Elevate your server's functionality. Whether it's integrating APIs, creating interactive commands, or implementing unique moderation tools, we bring a wealth of expertise to enhance your Discord server.`,
       },
     ],
@@ -289,22 +323,22 @@ const service_data = [
     specific_service: [
       {
         title: "Zapier Integration",
-        icon: icon_together,
+        icon: zapier,
         description: `Leverage Zapier to create connections between your  applications. Our expertise in Zapier allows us to design custom workflows that automate repetitive tasks.`,
       },
       {
         title: "Google App Script Solutions",
-        icon: icon_together,
+        icon: google,
         description: `With Google App Script, we bring automation to your G Suite applications. Our custom scripts enhance the functionality of Google Workspace.`,
       },
       {
         title: "Mailchimp Integration",
-        icon: icon_together,
+        icon: mailchimp,
         description: `Optimize your marketing efforts with Mailchimp integration. We design seamless connections between Mailchimp and your existing systems.`,
       },
       {
         title: "Dubsado Workflow Automation",
-        icon: icon_together,
+        icon: workflow,
         description: `Tansform your client management with Dubsado workflow automation. We tailor  to meet your specific needs, automating , invoicing, and project management.`,
       },
     ],
