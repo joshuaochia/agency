@@ -74,9 +74,15 @@ const DetailsSection = ({ item }) => {
             The Problem
           </h3>
           <p style={{ color: "black" }}>{item.problem}</p>
+          <h3
+            style={{ color: "black" }}
+            className="details_item_info_title mb-3"
+          >
+            Our ToolKit
+          </h3>
           <div className="row mb-5">
             {item.portfolioOpportunitiesCollection?.items?.map((opp, index) => (
-              <div key={index + 1} className="col col-lg-4 col-md-6">
+              <div key={index + 1} className="col col-lg-2 col-md-2">
                 <div className="iconbox_item bg-white">
                   <div className="item_icon">
                     <img
@@ -89,7 +95,7 @@ const DetailsSection = ({ item }) => {
                     <h3 style={{ color: "black" }} className="item_title">
                       {opp.title}
                     </h3>
-                    <p className="mb-0">{opp.description}</p>
+                    {/* <p className="mb-0">{opp.description}</p> */}
                   </div>
                 </div>
               </div>
