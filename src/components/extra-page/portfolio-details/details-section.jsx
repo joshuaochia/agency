@@ -82,7 +82,7 @@ const DetailsSection = ({ item }) => {
           </h3>
           <div className="row mb-5">
             {item.portfolioOpportunitiesCollection?.items?.map((opp, index) => (
-              <div key={index + 1} className="col col-lg-2 col-md-2">
+              <div key={index + 1} className="col col-lg-2 col-md-3">
                 <div className="iconbox_item bg-white">
                   <div className="item_icon">
                     <img
