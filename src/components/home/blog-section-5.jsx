@@ -27,7 +27,13 @@ const BlogSectionFive = () => {
         </div>
 
         <div className="blog_grouped row">
-          {blogs_data.slice(0, 3).map((item) => (
+          <h3
+            style={{ color: "#999999", textAlign: "center" }}
+            className="heading_title mb-0"
+          >
+            Coming soon!
+          </h3>
+          {/* {blogs_data.slice(0, 3).map((item) => (
             <div className="col col-lg-4 col-md-6" key={item.id}>
               <div
                 style={{ border: "1px solid rgba(15, 14, 14, 0.1)" }}
@@ -83,10 +89,10 @@ const BlogSectionFive = () => {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
 
-        <div className="btn_wrap pb-0 text-center">
+        {/* <div className="btn_wrap pb-0 text-center">
           <Link
             style={{ backgroundColor: "black" }}
             href="/blog"
@@ -111,7 +117,7 @@ const BlogSectionFive = () => {
               </span>
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
