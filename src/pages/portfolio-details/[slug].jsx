@@ -108,7 +108,6 @@ export async function getStaticProps({ params }) {
 
   const items = data.data.portfolioCollection.items[0];
 
-  console.log(items, "itemsss");
   return {
     props: items,
   };

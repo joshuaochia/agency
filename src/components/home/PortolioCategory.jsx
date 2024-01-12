@@ -6,7 +6,6 @@ function isOdd(num) {
 }
 
 const PortfolioCategory = ({ catID, arialabelledby, data, active }) => {
-  console.log(data, "fuckeme");
   return (
     <div
       className={`tab-pane fade  ${active}`}

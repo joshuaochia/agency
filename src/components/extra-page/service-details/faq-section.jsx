@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 
 const FaqSection = ({ data }) => {
-  console.log(data, "data bitch");
   return (
     <section
       style={{ background: "#FAFAFA" }}

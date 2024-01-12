@@ -8,7 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const DetailsSection = ({ item }) => {
-  console.log(item);
   const options = {
     weekday: "long",
     year: "numeric",
@@ -18,7 +17,7 @@ const DetailsSection = ({ item }) => {
   const date = new Date(item.dateStarted);
 
   const finalDate = date.toLocaleDateString("en-US", options);
-  console.log(item, "image");
+
   return (
     <section
       style={{ background: "#FAFAFA" }}

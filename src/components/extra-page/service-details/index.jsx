@@ -11,7 +11,6 @@ import ReviewSectionFive from "@components/home/review-section-5";
 import PortfolioSectionTwo from "@components/home/portfolio-section-2";
 
 const Index = ({ item, portfolioData, portfolioSingular }) => {
-  console.log(item, "yawa item");
   return (
     <>
       <HeaderFour />
