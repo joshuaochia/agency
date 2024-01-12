@@ -41,7 +41,7 @@ const DetailsSection = ({ item }) => {
                       {item?.fullTitle}
                     </h2>
                   </div>
-                  <Link href="/pricing" className="bd-btn-link btn_primary">
+                  <Link href="/contact" className="bd-btn-link btn_primary">
                     <span className="bd-button-content-wrapper">
                       <span className="bd-button-icon">
                         <i className="fa-light fa-arrow-right-long"></i>
@@ -86,7 +86,7 @@ const DetailsSection = ({ item }) => {
                       What we specifically do
                     </h2>
                   </div>
-                  <Link href="/pricing" className="bd-btn-link btn_primary">
+                  <Link href="/contact" className="bd-btn-link btn_primary">
                     <span className="bd-button-content-wrapper">
                       <span className="bd-button-icon">
                         <i className="fa-light fa-arrow-right-long"></i>
