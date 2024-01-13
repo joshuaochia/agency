@@ -26,18 +26,21 @@ const HeroSectionFour = () => {
       ></div>
       <div className="banner_bg_sm d-lg-none ">
         <div className="banner_bg_shape">
-          <Image
+          {/* <Image
             src={hero_banner_image}
             style={{ width: "100%", height: "100%" }}
             alt="shape_banner_10"
-          />
+          /> */}
         </div>
       </div>
       <div className="container">
         <div className="row align-items-center">
           <div className="col col-lg-6 order-last">
             <div className="hero_banner_image decoration_wrap">
-              <div className="rocket_image wow fadeInUp" data-wow-delay=".2s">
+              <div
+                className="rocket_image wow fadeInUp   "
+                data-wow-delay=".2s"
+              >
                 <Image
                   src={hero_image_4}
                   style={{
@@ -45,12 +48,13 @@ const HeroSectionFour = () => {
                     height: "100%",
                     borderRadius: "20px",
                   }}
+                  className="sm-none"
                   alt="Paradox Illustration Image"
                 />
               </div>
               <div className="deco_item shape_1">
                 <Image
-                  className="wow zoomIn"
+                  className="wow zoomIn sm-none"
                   data-wow-delay=".4s"
                   src={shape_circle_1}
                   style={{ width: "100%", height: "100%" }}
@@ -62,7 +66,7 @@ const HeroSectionFour = () => {
                 data-parallax='{"y" : 200, "smoothness": 10}'
               >
                 <Image
-                  className="wow zoomIn"
+                  className="wow zoomIn sm-none"
                   data-wow-delay=".2s"
                   src={shape_triangle_1}
                   style={{ width: "100%", height: "100%" }}
@@ -74,7 +78,7 @@ const HeroSectionFour = () => {
                 data-parallax='{"y" : -200, "smoothness": 10}'
               >
                 <Image
-                  className="wow zoomIn"
+                  className="wow zoomIn sm-none "
                   data-wow-delay=".2s"
                   src={shape_triangle_2}
                   style={{
@@ -88,7 +92,7 @@ const HeroSectionFour = () => {
               <ul className="deco_item shape_4 unordered_list_block">
                 <li>
                   <Image
-                    className="wow fadeInUp"
+                    className="wow fadeInUp sm-none"
                     data-wow-delay=".2s"
                     src={banner_avatar}
                     style={{
@@ -101,7 +105,7 @@ const HeroSectionFour = () => {
                 </li>
                 <li>
                   <Image
-                    className="wow fadeInUp"
+                    className="wow fadeInUp sm-none"
                     data-wow-delay=".4s"
                     src={banner_avatar_1}
                     style={{
@@ -113,7 +117,7 @@ const HeroSectionFour = () => {
                 </li>
                 <li>
                   <Image
-                    className="wow fadeInUp"
+                    className="wow fadeInUp sm-none"
                     data-wow-delay=".6s"
                     src={banner_avater_2}
                     style={{
@@ -198,13 +202,13 @@ const HeroSectionFour = () => {
         </div>
       </div>
       <div className="deco_item shape_5">
-        <Image
+        {/* <Image
           className="wow fadeInUp"
           data-wow-delay=".4s"
           src={shape_circle_1}
           style={{ width: "100%", height: "100%" }}
           alt="Paradox Illustration Image"
-        />
+        /> */}
       </div>
       {/* <div className="deco_item shape_6">
         <img
