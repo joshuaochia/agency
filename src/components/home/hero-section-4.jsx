@@ -22,7 +22,7 @@ const HeroSectionFour = () => {
     >
       <div
         className="banner_bg_4"
-        // style={{ backgroundImage: `url(${shape_banner_1.src})` }}
+        style={{ backgroundImage: `url(${shape_banner_1.src})` }}
       ></div>
       <div className="banner_bg_sm d-lg-none ">
         <div className="banner_bg_shape">

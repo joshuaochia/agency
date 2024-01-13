@@ -49,11 +49,11 @@ const PortfolioCategory = ({ catID, arialabelledby, data, active }) => {
                       <span className="btn_text">View Details</span>
                       <span className="btn_icon">
                         <img
-                          src="assets/images/icons/icon_arrow_down_right_dark.svg"
+                          src="/assets/images/icons/icon_arrow_down_right_dark.svg"
                           alt="Paradox icons"
                         />
                         <img
-                          src="assets/images/icons/icon_arrow_down_right_danger.svg"
+                          src="/assets/images/icons/icon_arrow_down_right_danger.svg"
                           alt="Paradox icons"
                         />
                       </span>
@@ -89,11 +89,11 @@ const PortfolioCategory = ({ catID, arialabelledby, data, active }) => {
                       <span className="btn_text">View Details</span>
                       <span className="btn_icon">
                         <img
-                          src="assets/images/icons/icon_arrow_down_right_white.svg"
+                          src="/assets/images/icons/icon_arrow_down_right_dark.svg"
                           alt="Paradox icons"
                         />
                         <img
-                          src="assets/images/icons/icon_arrow_down_right_white.svg"
+                          src="/assets/images/icons/icon_arrow_down_right_danger.svg"
                           alt="Paradox icons"
                         />
                       </span>
