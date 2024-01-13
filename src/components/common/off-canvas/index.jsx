@@ -8,7 +8,9 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
     <React.Fragment>
       <div className="fix">
-        <div className={`offcanvas__info ${isOffCanvasOpen ? "info-open" : ""}`}>
+        <div
+          className={`offcanvas__info ${isOffCanvasOpen ? "info-open" : ""}`}
+        >
           <div className="offcanvas__wrapper">
             <div className="offcanvas__content">
               <div className="offcanvas__top mb-4 d-flex justify-content-between align-items-center">
@@ -21,7 +23,10 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     />
                   </Link>
                 </div>
-                <div className="offcanvas__close" onClick={() => setIsOffCanvasOpen(false)}>
+                <div
+                  className="offcanvas__close"
+                  onClick={() => setIsOffCanvasOpen(false)}
+                >
                   <svg
                     className="menu-close-btn"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,19 +54,14 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    paradox@example.com
+                    contact@cearncreatives.com
                   </a>
                 </p>
-                <span>
-                  <a href="tel:725214456" target="_blank" rel="noreferrer">
-                    725 214 456
-                  </a>
-                </span>
               </div>
               <div className="offcanvas__contact-text">
                 <p>
                   <Link target="_blank" href="https://www.google.com/maps">
-                    Folkungagatan 83, Stockholm, Sweden
+                    Cagayan De oro, Misamis Oriental, Philippines
                   </Link>
                 </p>
               </div>
@@ -70,23 +70,27 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__social">
               <ul>
                 <li>
-                  <Link target="_blank" href="https://www.facebook.com">
+                  <Link
+                    target="_blank"
+                    href="https://www.facebook.com/cearncreatives"
+                  >
                     Facebook
                   </Link>
                 </li>
                 <li>
-                  <Link target="_blank" href="https://www.instagram.com">
-                    Instagram
-                  </Link>
-                </li>
-                <li>
-                  <Link target="_blank" href="https://www.twitter.com">
-                    Twitter
-                  </Link>
-                </li>
-                <li>
-                  <Link target="_blank" href="https://www.linkedin.com">
+                  <Link
+                    target="_blank"
+                    href="https://www.linkedin.com/company/cearn-creatives/"
+                  >
                     Linkedin
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    target="_blank"
+                    href="https://instagram.com/cearncreatives"
+                  >
+                    Instagram
                   </Link>
                 </li>
               </ul>
@@ -94,7 +98,12 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
           </div>
         </div>
       </div>
-      <div className={`offcanvas__overlay ${isOffCanvasOpen ? "overlay-open" : ""}`} onClick={() => setIsOffCanvasOpen(false)}></div>
+      <div
+        className={`offcanvas__overlay ${
+          isOffCanvasOpen ? "overlay-open" : ""
+        }`}
+        onClick={() => setIsOffCanvasOpen(false)}
+      ></div>
     </React.Fragment>
   );
 };

@@ -1,6 +1,7 @@
 const menu_data = [
   {
     id: 1,
+    pages: true,
     hasDropdown: false,
     title: "Home",
     link: "/",
@@ -15,6 +16,7 @@ const menu_data = [
   },
   {
     id: 2,
+
     hasDropdown: true,
     title: "Services",
     link: "/service",
@@ -93,6 +95,7 @@ const menu_data = [
   // },
   {
     id: 4,
+    pages: true,
     hasDropdown: false,
     title: "Portfolio",
     link: "/portfolio",
@@ -106,6 +109,7 @@ const menu_data = [
   },
   {
     id: 3,
+    pages: true,
     hasDropdown: false,
     title: "About Us",
     link: "/about",
